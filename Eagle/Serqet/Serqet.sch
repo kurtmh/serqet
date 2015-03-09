@@ -12411,6 +12411,110 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Microprocessor">
+<packages>
+<package name="MICROPROC">
+<hole x="-7.62" y="5.08" drill="0.9"/>
+<hole x="-7.62" y="2.54" drill="0.9"/>
+<hole x="-7.62" y="0" drill="0.9"/>
+<hole x="7.62" y="5.08" drill="0.9"/>
+<hole x="7.62" y="2.54" drill="0.9"/>
+<hole x="7.62" y="0" drill="0.9"/>
+<hole x="-7.62" y="-2.54" drill="0.9"/>
+<hole x="-7.62" y="-5.08" drill="0.9"/>
+<hole x="7.62" y="-2.54" drill="0.9"/>
+<hole x="7.62" y="-5.08" drill="0.9"/>
+<hole x="-5.08" y="-12.7" drill="0.9"/>
+<hole x="-2.54" y="-12.7" drill="0.9"/>
+<hole x="0" y="-12.7" drill="0.9"/>
+<hole x="2.54" y="-12.7" drill="0.9"/>
+<hole x="5.08" y="-12.7" drill="0.9"/>
+<wire x1="9.24991875" y1="10.5" x2="-9.24991875" y2="10.5" width="0.127" layer="51"/>
+<wire x1="9.24991875" y1="10.5" x2="9.24991875" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="9.24991875" y1="-10.5" x2="-9.24991875" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="-9.24991875" y1="10.5" x2="-9.24991875" y2="-10.5" width="0.127" layer="51"/>
+<pad name="1" x="-7.62" y="5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="-7.62" y="2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="3" x="-7.62" y="0" drill="1" diameter="1.778" shape="square"/>
+<pad name="4" x="-7.62" y="-2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="5" x="-7.62" y="-5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="7" x="-5.08" y="-12.7" drill="1" diameter="1.778" shape="square"/>
+<pad name="8" x="-2.54" y="-12.7" drill="1" diameter="1.778" shape="square"/>
+<pad name="9" x="0" y="-12.7" drill="1" diameter="1.778" shape="square"/>
+<pad name="10" x="2.54" y="-12.7" drill="1" diameter="1.778" shape="square"/>
+<pad name="11" x="5.08" y="-12.7" drill="1" diameter="1.778" shape="square"/>
+<pad name="13" x="7.62" y="-5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="14" x="7.62" y="-2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="15" x="7.62" y="0" drill="1" diameter="1.778" shape="square"/>
+<pad name="16" x="7.62" y="2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="17" x="7.62" y="5.08" drill="1" diameter="1.778" shape="square"/>
+<hole x="-7.62" y="-7.62" drill="0.9"/>
+<hole x="7.62" y="-7.62" drill="0.9"/>
+<pad name="6" x="-7.62" y="-7.62" drill="1" diameter="1.778" shape="square"/>
+<pad name="12" x="7.62" y="-7.62" drill="1" diameter="1.778" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MICROPROCESSOR">
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="SWCLK" x="-17.78" y="15.24" length="middle"/>
+<pin name="SWDIO" x="-17.78" y="12.7" length="middle"/>
+<pin name="AC_EN" x="-17.78" y="10.16" length="middle"/>
+<pin name="DC_EN" x="-17.78" y="7.62" length="middle"/>
+<pin name="GND" x="-17.78" y="5.08" length="middle"/>
+<pin name="V_IN" x="-17.78" y="2.54" length="middle"/>
+<pin name="PAIRING_LED" x="-5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="STATUS_LED" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="PAIRING_BUTTON" x="0" y="-22.86" length="middle" rot="R90"/>
+<pin name="POS_EN" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="NEG_EN" x="5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="GND2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="OFF_DAC" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="(VGA_DAC)" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="SDA" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="VDD" x="17.78" y="15.24" length="middle" rot="R180"/>
+<text x="-12.446" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.446" y="20.828" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MICROCONTROLLER">
+<gates>
+<gate name="G$1" symbol="MICROPROCESSOR" x="-7.62" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="MICROPROC">
+<connects>
+<connect gate="G$1" pin="(VGA_DAC)" pad="15"/>
+<connect gate="G$1" pin="AC_EN" pad="3"/>
+<connect gate="G$1" pin="DC_EN" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="GND2" pad="12"/>
+<connect gate="G$1" pin="NEG_EN" pad="11"/>
+<connect gate="G$1" pin="OFF_DAC" pad="14"/>
+<connect gate="G$1" pin="PAIRING_BUTTON" pad="9"/>
+<connect gate="G$1" pin="PAIRING_LED" pad="7"/>
+<connect gate="G$1" pin="POS_EN" pad="10"/>
+<connect gate="G$1" pin="SCL" pad="13"/>
+<connect gate="G$1" pin="SDA" pad="16"/>
+<connect gate="G$1" pin="STATUS_LED" pad="8"/>
+<connect gate="G$1" pin="SWCLK" pad="1"/>
+<connect gate="G$1" pin="SWDIO" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="17"/>
+<connect gate="G$1" pin="V_IN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12487,6 +12591,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="U$11" library="Microprocessor" deviceset="MICROCONTROLLER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13201,10 +13306,11 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 </nets>
 </sheet>
 <sheet>
-<description>Microcontroller</description>
+<description>Micro/Bluetooth</description>
 <plain>
 </plain>
 <instances>
+<instance part="U$11" gate="G$1" x="50.8" y="55.88"/>
 </instances>
 <busses>
 </busses>
