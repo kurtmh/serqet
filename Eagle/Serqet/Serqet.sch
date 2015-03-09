@@ -13398,7 +13398,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="-12.7" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ADJ_DC_OFFSET_OUT" class="0">
+<net name="DC_OFFSET_OUT" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="O/I_3"/>
 <wire x1="27.94" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
