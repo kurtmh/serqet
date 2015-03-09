@@ -12489,7 +12489,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <busses>
 </busses>
 <nets>
-<net name="PROBEOUT" class="0">
+<net name="PROBE_OUT" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="17.78" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
@@ -12523,7 +12523,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="27.94" y1="12.7" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PROBEOUT" class="0">
+<net name="PROBE_OUT" class="0">
 <segment>
 <pinref part="D1" gate="1" pin="2"/>
 <wire x1="27.94" y1="25.4" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
