@@ -12476,6 +12476,17 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="C3" library="rcl" deviceset="C-US" device="C0603" value="9.4nF"/>
 <part name="U$8" library="SparkFun-DigitalIC" deviceset="TC74HC4066AFT" device=""/>
+<part name="U$9" library="SparkFun-DigitalIC" deviceset="TC74HC4066AFT" device=""/>
+<part name="U$10" library="25AA02E48" deviceset="OPA355" device=""/>
+<part name="U$11" library="25AA02E48" deviceset="OPA355" device=""/>
+<part name="R10" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R14" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R15" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -13413,6 +13424,39 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="-58.42" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<description>Microcontroller</description>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
+<description>DC Offset</description>
+<plain>
+</plain>
+<instances>
+<instance part="U$9" gate="G$1" x="22.86" y="-15.24"/>
+<instance part="U$10" gate="G$1" x="106.68" y="63.5"/>
+<instance part="U$11" gate="G$1" x="109.22" y="0"/>
+<instance part="R10" gate="G$1" x="83.82" y="53.34"/>
+<instance part="R11" gate="G$1" x="68.58" y="71.12"/>
+<instance part="R12" gate="G$1" x="68.58" y="63.5"/>
+<instance part="R13" gate="G$1" x="83.82" y="43.18"/>
+<instance part="R14" gate="G$1" x="73.66" y="7.62"/>
+<instance part="R15" gate="G$1" x="73.66" y="2.54"/>
+<instance part="R16" gate="G$1" x="88.9" y="-10.16"/>
+<instance part="R17" gate="G$1" x="101.6" y="-22.86"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
