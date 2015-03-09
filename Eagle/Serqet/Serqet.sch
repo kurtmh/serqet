@@ -12601,6 +12601,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
+<part name="P+11" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12932,6 +12933,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <instance part="U$4" gate="G$1" x="-2.54" y="66.04"/>
 <instance part="U$6" gate="G$1" x="-2.54" y="63.5"/>
 <instance part="SUPPLY12" gate="GND" x="5.08" y="48.26"/>
+<instance part="P+11" gate="VCC" x="99.06" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -13000,7 +13002,14 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pinref part="U$4" gate="G$1" pin="KL"/>
 </segment>
 </net>
-<net name="3V3RAIL" class="0">
+<net name="5VRAIL" class="0">
+<segment>
+<pinref part="DCDCBOOST1" gate="G$1" pin="+VOUT"/>
+<wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<label x="91.44" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="FB"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -13010,16 +13019,9 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="88.9" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <junction x="88.9" y="66.04"/>
-<wire x1="99.06" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <junction x="99.06" y="66.04"/>
-<label x="106.68" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="5VRAIL" class="0">
-<segment>
-<pinref part="DCDCBOOST1" gate="G$1" pin="+VOUT"/>
-<wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<label x="91.44" y="30.48" size="1.778" layer="95"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
+<wire x1="99.06" y1="68.58" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
