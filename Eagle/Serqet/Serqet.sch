@@ -9578,11 +9578,11 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <library name="DCDCboost">
 <packages>
 <package name="8-SMD">
-<smd name="P$1" x="-1.27" y="-5.1" dx="1.2" dy="2" layer="1"/>
-<smd name="P$2" x="-3.72" y="-5.1" dx="1.2" dy="2" layer="1"/>
-<smd name="P$3" x="3.72" y="-5.1" dx="1.2" dy="2" layer="1"/>
-<smd name="P$4" x="3.72" y="5.1" dx="1.2" dy="2" layer="1"/>
-<smd name="P$5" x="-3.72" y="5.1" dx="1.2" dy="2" layer="1"/>
+<smd name="2" x="-1.27" y="-5.1" dx="1.2" dy="2" layer="1"/>
+<smd name="1" x="-3.72" y="-5.1" dx="1.2" dy="2" layer="1"/>
+<smd name="3" x="3.72" y="-5.1" dx="1.2" dy="2" layer="1"/>
+<smd name="5" x="3.72" y="5.1" dx="1.2" dy="2" layer="1"/>
+<smd name="4" x="-3.72" y="5.1" dx="1.2" dy="2" layer="1"/>
 <wire x1="-6.375" y1="5.35" x2="-6.375" y2="-5.35" width="0.127" layer="21"/>
 <wire x1="-6.375" y1="-5.35" x2="6.375" y2="-5.35" width="0.127" layer="21"/>
 <wire x1="6.375" y1="-5.35" x2="6.375" y2="5.35" width="0.127" layer="21"/>
@@ -9593,15 +9593,15 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 </packages>
 <symbols>
 <symbol name="R1S-3.305-R">
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="-VIN" x="-5.08" y="-10.16" visible="off" length="middle" rot="R90"/>
-<pin name="+VIN" x="-2.54" y="-10.16" visible="off" length="middle" rot="R90"/>
-<pin name="-VOUT" x="2.54" y="-10.16" visible="off" length="middle" rot="R90"/>
-<pin name="NC" x="-5.08" y="10.16" visible="off" length="middle" rot="R270"/>
-<pin name="+VOUT" x="2.54" y="10.16" visible="off" length="middle" rot="R270"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="-VIN" x="-5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="+VIN" x="-2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="-VOUT" x="2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="NC" x="-5.08" y="15.24" length="middle" rot="R270"/>
+<pin name="+VOUT" x="2.54" y="15.24" length="middle" rot="R270"/>
 <text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -9614,11 +9614,11 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <devices>
 <device name="" package="8-SMD">
 <connects>
-<connect gate="G$1" pin="+VIN" pad="P$1"/>
-<connect gate="G$1" pin="+VOUT" pad="P$2"/>
-<connect gate="G$1" pin="-VIN" pad="P$3"/>
-<connect gate="G$1" pin="-VOUT" pad="P$4"/>
-<connect gate="G$1" pin="NC" pad="P$5"/>
+<connect gate="G$1" pin="+VIN" pad="2"/>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="3"/>
+<connect gate="G$1" pin="NC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12918,8 +12918,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <instance part="L1" gate="G$1" x="81.28" y="66.04" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="33.02" y="55.88"/>
 <instance part="SUPPLY7" gate="GND" x="99.06" y="53.34"/>
-<instance part="SUPPLY8" gate="GND" x="45.72" y="22.86"/>
-<instance part="SUPPLY9" gate="GND" x="71.12" y="35.56"/>
+<instance part="SUPPLY8" gate="GND" x="40.64" y="22.86"/>
+<instance part="SUPPLY9" gate="GND" x="86.36" y="35.56"/>
 <instance part="U$4" gate="G$1" x="-2.54" y="66.04"/>
 <instance part="U$6" gate="G$1" x="-2.54" y="63.5"/>
 <instance part="SUPPLY12" gate="GND" x="5.08" y="48.26"/>
@@ -12950,21 +12950,23 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <segment>
 <pinref part="DCDCBOOST1" gate="G$1" pin="NC"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="DCDCBOOST1" gate="G$1" pin="-VIN"/>
-<pinref part="DCDCBOOST1" gate="G$1" pin="-VOUT"/>
-<wire x1="50.8" y1="38.1" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="50.8" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
-<junction x="50.8" y="30.48"/>
+<wire x1="86.36" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="KL"/>
 <wire x1="2.54" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="63.5" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="DCDCBOOST1" gate="G$1" pin="-VIN"/>
+<wire x1="45.72" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<pinref part="DCDCBOOST1" gate="G$1" pin="-VOUT"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<junction x="40.64" y="30.48"/>
 </segment>
 </net>
 <net name="BATT" class="0">
@@ -12983,7 +12985,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="20.32" y1="43.18" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
 <junction x="20.32" y="43.18"/>
 <pinref part="DCDCBOOST1" gate="G$1" pin="+VIN"/>
-<wire x1="20.32" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
 <label x="5.08" y="71.12" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="KL"/>
@@ -13001,14 +13003,14 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <junction x="88.9" y="66.04"/>
 <wire x1="99.06" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <junction x="99.06" y="66.04"/>
-<label x="106.68" y="71.12" size="1.778" layer="95"/>
+<label x="106.68" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5VRAIL" class="0">
 <segment>
 <pinref part="DCDCBOOST1" gate="G$1" pin="+VOUT"/>
-<wire x1="71.12" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<label x="91.44" y="35.56" size="1.778" layer="95"/>
+<wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<label x="91.44" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
