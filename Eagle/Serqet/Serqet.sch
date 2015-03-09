@@ -13118,6 +13118,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <sheet>
 <description>Coupling</description>
 <plain>
+<text x="-30.48" y="-15.24" size="1.778" layer="97">bilateral switch used in DC Offset</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="30.48" y="60.96" rot="MR180"/>
@@ -13272,10 +13273,11 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <label x="-68.58" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="POS_OFFSET_EN" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="C_4"/>
 <wire x1="-17.78" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-5.08" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="COUPLING_OUT" class="0">
@@ -13301,6 +13303,20 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <junction x="-58.42" y="5.08"/>
 <pinref part="U$8" gate="G$1" pin="I/O_2"/>
 <wire x1="-58.42" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADJ_DC_OFFSET" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="I/O_4"/>
+<wire x1="-17.78" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-5.08" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POS_OFFSET" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="O/I_4"/>
+<wire x1="-17.78" y1="-10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-5.08" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -13330,6 +13346,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="111.76" y1="86.36" x2="111.76" y2="50.8" width="0.1524" layer="97"/>
 <text x="63.5" y="81.28" size="1.778" layer="97">Voltage Summer</text>
 <text x="63.5" y="33.02" size="1.778" layer="97">Voltage Subtractor</text>
+<text x="20.32" y="76.2" size="1.778" layer="97">See coupling for bilateral switch</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="2.54" y="-7.62"/>
@@ -13486,10 +13503,11 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="35.56" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="POS_OFFSET" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ATTEN_OUT" class="0">
@@ -13516,7 +13534,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="35.56" y1="-5.08" x2="139.7" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="NEG_OFFSET_EN" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="C_1"/>
 <wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
@@ -13530,6 +13548,9 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="106.68" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="0" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
 <junction x="30.48" y="2.54"/>
+<wire x1="-5.08" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-5.08" y="2.54"/>
+<label x="-55.88" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -13541,7 +13562,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="-30.48" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="POS_OFFSET_EN" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="ENABLE"/>
 <wire x1="106.68" y1="63.5" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
@@ -13556,6 +13577,9 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="-7.62" y1="-22.86" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="C_2"/>
 <wire x1="-7.62" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-10.16"/>
+<label x="-55.88" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
