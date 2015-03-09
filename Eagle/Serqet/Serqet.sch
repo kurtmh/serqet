@@ -13042,6 +13042,13 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <instance part="SUPPLY19" gate="GND" x="20.32" y="22.86"/>
 </instances>
 <busses>
+<bus name="ADC_OUT_[0..7]">
+<segment>
+<wire x1="81.28" y1="48.26" x2="81.28" y2="68.58" width="0.762" layer="92"/>
+<wire x1="81.28" y1="68.58" x2="91.44" y2="68.58" width="0.762" layer="92"/>
+<label x="81.28" y="71.12" size="1.778" layer="95"/>
+</segment>
+</bus>
 </busses>
 <nets>
 <net name="VGA_OUT" class="0">
@@ -13131,6 +13138,54 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 <wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <junction x="68.58" y="73.66"/>
+</segment>
+</net>
+<net name="ADC_OUT_0" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D0"/>
+<wire x1="81.28" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_1" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D1"/>
+<wire x1="81.28" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_2" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D2"/>
+<wire x1="81.28" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_3" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D3"/>
+<wire x1="81.28" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_4" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D4"/>
+<wire x1="81.28" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_5" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D5"/>
+<wire x1="81.28" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_6" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D6"/>
+<wire x1="81.28" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_7" class="0">
+<segment>
+<pinref part="U1" gate="U" pin="D7"/>
+<wire x1="81.28" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
