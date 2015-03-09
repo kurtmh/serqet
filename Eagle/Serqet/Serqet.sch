@@ -12696,7 +12696,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <sheet>
 <description>VGA</description>
 <plain>
-<text x="-22.86" y="25.4" size="1.778" layer="91">3.3*10/66 V= 0.5 V</text>
+<text x="-22.86" y="25.4" size="1.778" layer="97">3.3*10/66 V= 0.5 V</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="45.72" y="53.34"/>
