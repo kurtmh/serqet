@@ -12695,11 +12695,11 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pin name="ADC_OUT_6" x="-43.18" y="5.08" length="middle"/>
 <pin name="ADC_OUT_7" x="-43.18" y="2.54" length="middle"/>
 <pin name="ADC_ENCODE" x="-43.18" y="-2.54" length="middle"/>
-<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="SCK" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="-43.18" y="-53.34" length="middle"/>
+<pin name="SCK" x="-43.18" y="-55.88" length="middle"/>
 <pin name="GND" x="-43.18" y="-17.78" length="middle"/>
-<pin name="RESET" x="12.7" y="-58.42" length="middle" rot="R180"/>
-<pin name="STATUS_LED" x="12.7" y="-55.88" length="middle" rot="R180"/>
+<pin name="RESET" x="-43.18" y="27.94" length="middle"/>
+<pin name="STATUS_LED" x="-43.18" y="25.4" length="middle"/>
 <pin name="PIN_92" x="12.7" y="-53.34" length="middle" rot="R180"/>
 <pin name="PIN_91" x="12.7" y="-50.8" length="middle" rot="R180"/>
 <pin name="PIN_90" x="12.7" y="-48.26" length="middle" rot="R180"/>
