@@ -186,23 +186,23 @@
 <pad name="PIN_23" x="-1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
 <hole x="1.27" y="-3.81" drill="0.9"/>
 <pad name="PIN_55" x="1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<wire x1="-8.89" y1="62.23" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="67.31" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="46.99" x2="19.05" y2="46.99" width="0.127" layer="21"/>
-<wire x1="19.05" y1="46.99" x2="19.05" y2="62.23" width="0.127" layer="21"/>
-<wire x1="19.05" y1="62.23" x2="-8.89" y2="62.23" width="0.127" layer="21"/>
-<hole x="6" y="60" drill="0.7"/>
-<hole x="8" y="60" drill="0.7"/>
-<hole x="10" y="60" drill="0.7"/>
-<hole x="12" y="60" drill="0.7"/>
-<pad name="GND_6" x="6" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="TXD" x="8" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="RXD" x="10" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="VCC_UNREG" x="12" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<wire x1="4.75" y1="62.25" x2="13.25" y2="62.25" width="0.127" layer="21"/>
-<wire x1="13.25" y1="62.25" x2="13.25" y2="57.75" width="0.127" layer="21"/>
-<wire x1="13.25" y1="57.75" x2="4.75" y2="57.75" width="0.127" layer="21"/>
-<wire x1="4.75" y1="57.75" x2="4.75" y2="62.25" width="0.127" layer="21"/>
+<wire x1="19.05" y1="46.99" x2="19.05" y2="67.31" width="0.127" layer="21"/>
+<hole x="6" y="65" drill="0.7"/>
+<hole x="8" y="65" drill="0.7"/>
+<hole x="10" y="65" drill="0.7"/>
+<hole x="12" y="65" drill="0.7"/>
+<pad name="GND_6" x="6" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="TXD" x="8" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="RXD" x="10" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="VCC_UNREG" x="12" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<wire x1="4.75" y1="67.25" x2="13.25" y2="67.25" width="0.127" layer="21"/>
+<wire x1="13.25" y1="67.25" x2="13.25" y2="62.75" width="0.127" layer="21"/>
+<wire x1="13.25" y1="62.75" x2="4.75" y2="62.75" width="0.127" layer="21"/>
+<wire x1="4.75" y1="62.75" x2="4.75" y2="67.25" width="0.127" layer="21"/>
 <text x="-6.35" y="24.13" size="1.27" layer="25">KNJN RS232 FPGA Pluto-II</text>
+<wire x1="-8.89" y1="67.31" x2="19.05" y2="67.31" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -248,11 +248,11 @@
 <pin name="ADC_OUT_6" x="-43.18" y="5.08" length="middle"/>
 <pin name="ADC_OUT_7" x="-43.18" y="2.54" length="middle"/>
 <pin name="ADC_ENCODE" x="-43.18" y="-2.54" length="middle"/>
-<pin name="PIN_49" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="PIN_50" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="-43.18" y="-17.78" length="middle"/>
-<pin name="PIN_98" x="12.7" y="-58.42" length="middle" rot="R180"/>
-<pin name="PIN_97" x="12.7" y="-55.88" length="middle" rot="R180"/>
+<pin name="RESET" x="12.7" y="-58.42" length="middle" rot="R180"/>
+<pin name="STATUS_LED" x="12.7" y="-55.88" length="middle" rot="R180"/>
 <pin name="PIN_92" x="12.7" y="-53.34" length="middle" rot="R180"/>
 <pin name="PIN_91" x="12.7" y="-50.8" length="middle" rot="R180"/>
 <pin name="PIN_90" x="12.7" y="-48.26" length="middle" rot="R180"/>
@@ -313,9 +313,7 @@
 <connect gate="G$1" pin="PIN_28" pad="PIN_28"/>
 <connect gate="G$1" pin="PIN_3" pad="PIN_3"/>
 <connect gate="G$1" pin="PIN_4" pad="PIN_4"/>
-<connect gate="G$1" pin="PIN_49" pad="PIN_49"/>
 <connect gate="G$1" pin="PIN_5" pad="PIN_5"/>
-<connect gate="G$1" pin="PIN_50" pad="PIN_50"/>
 <connect gate="G$1" pin="PIN_51" pad="PIN_51"/>
 <connect gate="G$1" pin="PIN_52" pad="PIN_52"/>
 <connect gate="G$1" pin="PIN_53" pad="PIN_53"/>
@@ -337,10 +335,12 @@
 <connect gate="G$1" pin="PIN_90" pad="PIN_90"/>
 <connect gate="G$1" pin="PIN_91" pad="PIN_91"/>
 <connect gate="G$1" pin="PIN_92" pad="PIN_92"/>
-<connect gate="G$1" pin="PIN_97" pad="PIN_97"/>
-<connect gate="G$1" pin="PIN_98" pad="PIN_98"/>
 <connect gate="G$1" pin="PIN_99" pad="PIN_99"/>
+<connect gate="G$1" pin="RESET" pad="PIN_98"/>
 <connect gate="G$1" pin="RXD" pad="RXD"/>
+<connect gate="G$1" pin="SCK" pad="PIN_50"/>
+<connect gate="G$1" pin="SDA" pad="PIN_49"/>
+<connect gate="G$1" pin="STATUS_LED" pad="PIN_97"/>
 <connect gate="G$1" pin="TXD" pad="TXD"/>
 <connect gate="G$1" pin="VCC_UNREG" pad="VCC_UNREG"/>
 </connects>
