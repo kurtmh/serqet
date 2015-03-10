@@ -13450,6 +13450,20 @@ at 30/07/2012 10:08:22</description>
 <junction x="15.24" y="48.26"/>
 </segment>
 </net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="SDA"/>
+<wire x1="22.86" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<label x="10.16" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="SCK"/>
+<wire x1="22.86" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="10.16" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -13934,11 +13948,24 @@ at 30/07/2012 10:08:22</description>
 </plain>
 <instances>
 <instance part="U$11" gate="G$1" x="50.8" y="55.88"/>
-<instance part="U3" gate="A" x="177.8" y="63.5"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="SCL"/>
+<wire x1="68.58" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<label x="76.2" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="SDA"/>
+<wire x1="68.58" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<label x="76.2" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -14188,6 +14215,32 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-7.62" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-7.62" y="-10.16"/>
 <label x="-55.88" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>I2C DAC</description>
+<plain>
+</plain>
+<instances>
+<instance part="U3" gate="A" x="27.94" y="30.48"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="SDA"/>
+<wire x1="45.72" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="53.34" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="SCL"/>
+<wire x1="10.16" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<label x="2.54" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
