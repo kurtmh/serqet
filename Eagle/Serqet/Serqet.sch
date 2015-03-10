@@ -12414,16 +12414,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <library name="Microprocessor">
 <packages>
 <package name="MICROPROC">
-<hole x="-7.62" y="5.08" drill="0.9"/>
-<hole x="-7.62" y="2.54" drill="0.9"/>
-<hole x="-7.62" y="0" drill="0.9"/>
-<hole x="7.62" y="5.08" drill="0.9"/>
-<hole x="7.62" y="2.54" drill="0.9"/>
-<hole x="7.62" y="0" drill="0.9"/>
-<hole x="-7.62" y="-2.54" drill="0.9"/>
-<hole x="-7.62" y="-5.08" drill="0.9"/>
-<hole x="7.62" y="-2.54" drill="0.9"/>
-<hole x="7.62" y="-5.08" drill="0.9"/>
+<hole x="-7.592821875" y="5.08" drill="0.9"/>
+<hole x="7.592821875" y="5.08" drill="0.9"/>
 <hole x="-5.08" y="-12.7" drill="0.9"/>
 <hole x="-2.54" y="-12.7" drill="0.9"/>
 <hole x="0" y="-12.7" drill="0.9"/>
@@ -12433,25 +12425,33 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="9.24991875" y1="10.5" x2="9.24991875" y2="-10.5" width="0.127" layer="51"/>
 <wire x1="9.24991875" y1="-10.5" x2="-9.24991875" y2="-10.5" width="0.127" layer="51"/>
 <wire x1="-9.24991875" y1="10.5" x2="-9.24991875" y2="-10.5" width="0.127" layer="51"/>
-<pad name="1" x="-7.62" y="5.08" drill="1" diameter="1.778" shape="square"/>
-<pad name="2" x="-7.62" y="2.54" drill="1" diameter="1.778" shape="square"/>
-<pad name="3" x="-7.62" y="0" drill="1" diameter="1.778" shape="square"/>
-<pad name="4" x="-7.62" y="-2.54" drill="1" diameter="1.778" shape="square"/>
-<pad name="5" x="-7.62" y="-5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="1" x="-7.592821875" y="5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="-7.592821875" y="2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="3" x="-7.592821875" y="0" drill="1" diameter="1.778" shape="square"/>
+<pad name="4" x="-7.592821875" y="-2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="5" x="-7.592821875" y="-5.08" drill="1" diameter="1.778" shape="square"/>
 <pad name="7" x="-5.08" y="-12.7" drill="1" diameter="1.778" shape="square"/>
 <pad name="8" x="-2.54" y="-12.7" drill="1" diameter="1.778" shape="square"/>
 <pad name="9" x="0" y="-12.7" drill="1" diameter="1.778" shape="square"/>
 <pad name="10" x="2.54" y="-12.7" drill="1" diameter="1.778" shape="square"/>
 <pad name="11" x="5.08" y="-12.7" drill="1" diameter="1.778" shape="square"/>
-<pad name="13" x="7.62" y="-5.08" drill="1" diameter="1.778" shape="square"/>
-<pad name="14" x="7.62" y="-2.54" drill="1" diameter="1.778" shape="square"/>
-<pad name="15" x="7.62" y="0" drill="1" diameter="1.778" shape="square"/>
-<pad name="16" x="7.62" y="2.54" drill="1" diameter="1.778" shape="square"/>
-<pad name="17" x="7.62" y="5.08" drill="1" diameter="1.778" shape="square"/>
-<hole x="-7.62" y="-7.62" drill="0.9"/>
-<hole x="7.62" y="-7.62" drill="0.9"/>
-<pad name="6" x="-7.62" y="-7.62" drill="1" diameter="1.778" shape="square"/>
-<pad name="12" x="7.62" y="-7.62" drill="1" diameter="1.778" shape="square"/>
+<pad name="13" x="7.592821875" y="-5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="14" x="7.592821875" y="-2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="15" x="7.592821875" y="0" drill="1" diameter="1.778" shape="square"/>
+<pad name="16" x="7.592821875" y="2.54" drill="1" diameter="1.778" shape="square"/>
+<pad name="17" x="7.592821875" y="5.08" drill="1" diameter="1.778" shape="square"/>
+<pad name="6" x="-7.592821875" y="-7.62" drill="1" diameter="1.778" shape="square"/>
+<pad name="12" x="7.592821875" y="-7.62" drill="1" diameter="1.778" shape="square"/>
+<hole x="7.592821875" y="2.54" drill="0.9"/>
+<hole x="7.592821875" y="0" drill="0.9"/>
+<hole x="7.592821875" y="-2.54" drill="0.9"/>
+<hole x="7.592821875" y="-5.08" drill="0.9"/>
+<hole x="7.592821875" y="-7.62" drill="0.9"/>
+<hole x="-7.592821875" y="2.54" drill="0.9"/>
+<hole x="-7.592821875" y="0" drill="0.9"/>
+<hole x="-7.592821875" y="-2.54" drill="0.9"/>
+<hole x="-7.592821875" y="-5.08" drill="0.9"/>
+<hole x="-7.592821875" y="-7.62" drill="0.9"/>
 </package>
 </packages>
 <symbols>
