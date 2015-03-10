@@ -12799,6 +12799,128 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="LTC_By_element14_Batch_1">
+<description>Developed by element14 :&lt;br&gt;
+element14 CAD Library consolidation.ulp
+at 30/07/2012 10:08:22</description>
+<packages>
+<package name="SOT65P280X100-8N">
+<smd name="1" x="-1.2192" y="0.9652" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="2" x="-1.2192" y="0.3302" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="3" x="-1.2192" y="-0.3302" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="4" x="-1.2192" y="-0.9652" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="5" x="1.2192" y="-0.9652" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="6" x="1.2192" y="-0.3302" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="7" x="1.2192" y="0.3302" dx="1.2192" dy="0.4064" layer="1"/>
+<smd name="8" x="1.2192" y="0.9652" dx="1.2192" dy="0.4064" layer="1"/>
+<wire x1="-0.4318" y1="-1.4478" x2="0.4318" y2="-1.4478" width="0.1524" layer="21"/>
+<wire x1="0.4318" y1="1.4478" x2="0.3048" y2="1.4478" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.4478" x2="-0.4318" y2="1.4478" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0.1524" layer="21" curve="-180"/>
+<text x="-2.0574" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-0.8636" y1="-1.4478" x2="0.8636" y2="-1.4478" width="0" layer="51"/>
+<wire x1="0.8636" y1="-1.4478" x2="0.8636" y2="-1.143" width="0" layer="51"/>
+<wire x1="0.8636" y1="-1.143" x2="0.8636" y2="-0.7874" width="0" layer="51"/>
+<wire x1="0.8636" y1="-0.7874" x2="0.8636" y2="-0.508" width="0" layer="51"/>
+<wire x1="0.8636" y1="-0.508" x2="0.8636" y2="-0.1524" width="0" layer="51"/>
+<wire x1="0.8636" y1="-0.1524" x2="0.8636" y2="0.1524" width="0" layer="51"/>
+<wire x1="0.8636" y1="0.1524" x2="0.8636" y2="0.508" width="0" layer="51"/>
+<wire x1="0.8636" y1="0.508" x2="0.8636" y2="0.7874" width="0" layer="51"/>
+<wire x1="0.8636" y1="1.4478" x2="0.3048" y2="1.4478" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4478" x2="-0.8636" y2="1.4478" width="0" layer="51"/>
+<wire x1="-0.8636" y1="1.4478" x2="-0.8636" y2="1.143" width="0" layer="51"/>
+<wire x1="-0.8636" y1="1.143" x2="-0.8636" y2="0.7874" width="0" layer="51"/>
+<wire x1="-0.8636" y1="0.7874" x2="-0.8636" y2="0.508" width="0" layer="51"/>
+<wire x1="-0.8636" y1="0.508" x2="-0.8636" y2="0.1524" width="0" layer="51"/>
+<wire x1="-0.8636" y1="0.1524" x2="-0.8636" y2="-0.1524" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-0.1524" x2="-0.8636" y2="-0.508" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-0.508" x2="-0.8636" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-0.8636" y1="1.143" x2="-1.397" y2="1.143" width="0" layer="51"/>
+<wire x1="-1.397" y1="1.143" x2="-1.397" y2="0.7874" width="0" layer="51"/>
+<wire x1="-1.397" y1="0.7874" x2="-0.8636" y2="0.7874" width="0" layer="51"/>
+<wire x1="-0.8636" y1="0.508" x2="-1.397" y2="0.508" width="0" layer="51"/>
+<wire x1="-1.397" y1="0.508" x2="-1.397" y2="0.1524" width="0" layer="51"/>
+<wire x1="-1.397" y1="0.1524" x2="-0.8636" y2="0.1524" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-0.1524" x2="-1.397" y2="-0.1524" width="0" layer="51"/>
+<wire x1="-1.397" y1="-0.1524" x2="-1.397" y2="-0.508" width="0" layer="51"/>
+<wire x1="-1.397" y1="-0.508" x2="-0.8636" y2="-0.508" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-1.4478" x2="-0.8636" y2="-1.143" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-1.143" x2="-0.8636" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-0.8636" y1="-0.7874" x2="-1.397" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-1.397" y1="-0.7874" x2="-1.397" y2="-1.143" width="0" layer="51"/>
+<wire x1="-1.397" y1="-1.143" x2="-0.8636" y2="-1.143" width="0" layer="51"/>
+<wire x1="0.8636" y1="-1.143" x2="1.397" y2="-1.143" width="0" layer="51"/>
+<wire x1="1.397" y1="-1.143" x2="1.397" y2="-0.7874" width="0" layer="51"/>
+<wire x1="1.397" y1="-0.7874" x2="0.8636" y2="-0.7874" width="0" layer="51"/>
+<wire x1="0.8636" y1="-0.508" x2="1.397" y2="-0.508" width="0" layer="51"/>
+<wire x1="1.397" y1="-0.508" x2="1.397" y2="-0.1524" width="0" layer="51"/>
+<wire x1="1.397" y1="-0.1524" x2="0.8636" y2="-0.1524" width="0" layer="51"/>
+<wire x1="0.8636" y1="0.1524" x2="1.397" y2="0.1524" width="0" layer="51"/>
+<wire x1="1.397" y1="0.1524" x2="1.397" y2="0.508" width="0" layer="51"/>
+<wire x1="1.397" y1="0.508" x2="0.8636" y2="0.508" width="0" layer="51"/>
+<wire x1="0.8636" y1="1.4478" x2="0.8636" y2="1.143" width="0" layer="51"/>
+<wire x1="0.8636" y1="1.143" x2="0.8636" y2="0.7874" width="0" layer="51"/>
+<wire x1="0.8636" y1="0.7874" x2="1.397" y2="0.7874" width="0" layer="51"/>
+<wire x1="1.397" y1="0.7874" x2="1.397" y2="1.143" width="0" layer="51"/>
+<wire x1="1.397" y1="1.143" x2="0.8636" y2="1.143" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0" layer="51" curve="-180"/>
+<text x="-2.0574" y="1.27" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LTC2633CTS8-LZ8TRMPBF">
+<pin name="VCC" x="-17.78" y="5.08" length="middle" direction="pwr"/>
+<pin name="SCL" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="CA0" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="REF" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pas"/>
+<pin name="VOUTA" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="VOUTB" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="SDA" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
+<text x="-4.699" y="12.6238" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-2.8702" y="-19.6596" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LTC2633CTS8-LZ8TRMPBF" prefix="U">
+<description>DAC</description>
+<gates>
+<gate name="A" symbol="LTC2633CTS8-LZ8TRMPBF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT65P280X100-8N">
+<connects>
+<connect gate="A" pin="CA0" pad="2"/>
+<connect gate="A" pin="GND" pad="4"/>
+<connect gate="A" pin="REF" pad="3"/>
+<connect gate="A" pin="SCL" pad="1"/>
+<connect gate="A" pin="SDA" pad="8"/>
+<connect gate="A" pin="VCC" pad="7"/>
+<connect gate="A" pin="VOUTA" pad="5"/>
+<connect gate="A" pin="VOUTB" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="LTC2633CTS8-LZ8#TRMPBF" constant="no"/>
+<attribute name="OC_FARNELL" value="-" constant="no"/>
+<attribute name="OC_NEWARK" value="48T3867" constant="no"/>
+<attribute name="PACKAGE" value="SOT-8" constant="no"/>
+<attribute name="SUPPLIER" value="Linear Technology" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12889,6 +13011,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="KNJN_FPGA1" library="KNJN_RS232_FPGA_Pluto-II" deviceset="KNJNRS232FPGAPLUTO-II" device="KNJNRS232FPGAPLUTO-II"/>
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
+<part name="U3" library="LTC_By_element14_Batch_1" deviceset="LTC2633CTS8-LZ8TRMPBF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13811,6 +13934,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 </plain>
 <instances>
 <instance part="U$11" gate="G$1" x="50.8" y="55.88"/>
+<instance part="U3" gate="A" x="177.8" y="63.5"/>
 </instances>
 <busses>
 </busses>
