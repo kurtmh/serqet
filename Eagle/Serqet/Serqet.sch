@@ -12515,6 +12515,290 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="KNJN_RS232_FPGA_Pluto-II">
+<packages>
+<package name="KNJNRS232FPGAPLUTO-II">
+<hole x="-6.35" y="-6.35" drill="0.9"/>
+<hole x="-3.81" y="-6.35" drill="0.9"/>
+<pad name="GND" x="-6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<hole x="-1.27" y="-6.35" drill="0.9"/>
+<hole x="1.27" y="-6.35" drill="0.9"/>
+<hole x="3.81" y="-6.35" drill="0.9"/>
+<hole x="6.35" y="-6.35" drill="0.9"/>
+<hole x="8.89" y="-6.35" drill="0.9"/>
+<hole x="11.43" y="-6.35" drill="0.9"/>
+<hole x="13.97" y="-6.35" drill="0.9"/>
+<hole x="16.51" y="-6.35" drill="0.9"/>
+<hole x="16.51" y="-3.81" drill="0.9"/>
+<hole x="13.97" y="-3.81" drill="0.9"/>
+<hole x="11.43" y="-3.81" drill="0.9"/>
+<hole x="8.89" y="-3.81" drill="0.9"/>
+<hole x="6.35" y="-3.81" drill="0.9"/>
+<hole x="3.81" y="-3.81" drill="0.9"/>
+<hole x="-1.27" y="-3.81" drill="0.9"/>
+<hole x="-3.81" y="-3.81" drill="0.9"/>
+<hole x="-6.35" y="-3.81" drill="0.9"/>
+<hole x="-6.35" y="-1.27" drill="0.9"/>
+<hole x="-6.35" y="1.27" drill="0.9"/>
+<hole x="-6.35" y="3.81" drill="0.9"/>
+<hole x="-6.35" y="6.35" drill="0.9"/>
+<hole x="-6.35" y="8.89" drill="0.9"/>
+<hole x="-6.35" y="11.43" drill="0.9"/>
+<hole x="-6.35" y="13.97" drill="0.9"/>
+<hole x="-6.35" y="16.51" drill="0.9"/>
+<hole x="-6.35" y="19.05" drill="0.9"/>
+<hole x="-3.81" y="21.59" drill="0.9"/>
+<hole x="-1.27" y="21.59" drill="0.9"/>
+<hole x="1.27" y="21.59" drill="0.9"/>
+<hole x="3.81" y="21.59" drill="0.9"/>
+<hole x="6.35" y="21.59" drill="0.9"/>
+<hole x="8.89" y="21.59" drill="0.9"/>
+<hole x="11.43" y="21.59" drill="0.9"/>
+<hole x="13.97" y="21.59" drill="0.9"/>
+<hole x="16.51" y="21.59" drill="0.9"/>
+<hole x="16.51" y="-1.27" drill="0.9"/>
+<hole x="16.51" y="1.27" drill="0.9"/>
+<hole x="16.51" y="3.81" drill="0.9"/>
+<hole x="16.51" y="6.35" drill="0.9"/>
+<hole x="16.51" y="8.89" drill="0.9"/>
+<hole x="16.51" y="11.43" drill="0.9"/>
+<hole x="16.51" y="13.97" drill="0.9"/>
+<hole x="16.51" y="16.51" drill="0.9"/>
+<hole x="16.51" y="19.05" drill="0.9"/>
+<hole x="13.97" y="19.05" drill="0.9"/>
+<hole x="11.43" y="19.05" drill="0.9"/>
+<hole x="8.89" y="19.05" drill="0.9"/>
+<hole x="6.35" y="19.05" drill="0.9"/>
+<hole x="3.81" y="19.05" drill="0.9"/>
+<hole x="1.27" y="19.05" drill="0.9"/>
+<hole x="-1.27" y="19.05" drill="0.9"/>
+<hole x="-3.81" y="19.05" drill="0.9"/>
+<pad name="PIN_52" x="-3.81" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_53" x="-1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_56" x="1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_66" x="3.81" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_72" x="6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="+3.3V_3" x="8.89" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_73" x="11.43" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_75" x="13.97" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_76" x="16.51" y="-6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_77" x="16.51" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND_5" x="13.97" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_74" x="11.43" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="+3.3V_2" x="8.89" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND_4" x="6.35" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_65" x="3.81" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND_3" x="-1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_51" x="-3.81" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_50" x="-6.35" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_49" x="-6.35" y="-1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_48" x="-6.35" y="1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_47" x="-6.35" y="3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_41" x="-6.35" y="6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_38" x="-6.35" y="8.89" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_37" x="-6.35" y="11.43" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_36" x="-6.35" y="13.97" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_35" x="-6.35" y="16.51" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_34" x="-6.35" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_28" x="-3.81" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_24" x="-1.27" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_21" x="1.27" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND_2" x="3.81" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="+3.3V_1" x="6.35" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_5" x="8.89" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_2" x="11.43" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_99" x="13.97" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_97" x="16.51" y="19.05" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_98" x="16.51" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_1" x="13.97" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_3" x="11.43" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_4" x="8.89" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_10" x="6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="+3.3V" x="3.81" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_22" x="1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_92" x="16.51" y="16.51" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_91" x="16.51" y="13.97" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_90" x="16.51" y="11.43" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_88" x="16.51" y="8.89" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_85" x="16.51" y="6.35" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_84" x="16.51" y="3.81" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_79" x="16.51" y="1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_78" x="16.51" y="-1.27" drill="1" diameter="1.778" shape="square"/>
+<wire x1="-8.89" y1="-11.43" x2="19.05" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-11.43" x2="19.05" y2="46.99" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-11.43" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
+<hole x="-6.35" y="21.59" drill="0.9"/>
+<pad name="PIN_27" x="-6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND_1" x="-3.81" y="21.59" drill="1" diameter="1.778" shape="square" rot="R90"/>
+<pad name="PIN_23" x="-1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<hole x="1.27" y="-3.81" drill="0.9"/>
+<pad name="PIN_55" x="1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
+<wire x1="-8.89" y1="62.23" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="46.99" x2="19.05" y2="46.99" width="0.127" layer="21"/>
+<wire x1="19.05" y1="46.99" x2="19.05" y2="62.23" width="0.127" layer="21"/>
+<wire x1="19.05" y1="62.23" x2="-8.89" y2="62.23" width="0.127" layer="21"/>
+<hole x="6" y="60" drill="0.7"/>
+<hole x="8" y="60" drill="0.7"/>
+<hole x="10" y="60" drill="0.7"/>
+<hole x="12" y="60" drill="0.7"/>
+<pad name="GND_6" x="6" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="TXD" x="8" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="RXD" x="10" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="VCC_UNREG" x="12" y="60" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<wire x1="4.75" y1="62.25" x2="13.25" y2="62.25" width="0.127" layer="21"/>
+<wire x1="13.25" y1="62.25" x2="13.25" y2="57.75" width="0.127" layer="21"/>
+<wire x1="13.25" y1="57.75" x2="4.75" y2="57.75" width="0.127" layer="21"/>
+<wire x1="4.75" y1="57.75" x2="4.75" y2="62.25" width="0.127" layer="21"/>
+<text x="-6.35" y="24.13" size="1.27" layer="25">KNJN RS232 FPGA Pluto-II</text>
+</package>
+</packages>
+<symbols>
+<symbol name="KNJNRS232FPGAPLUTO-II">
+<description>KNJN RS232 FPGA Pluto-II</description>
+<pin name="GND_1" x="-43.18" y="-20.32" length="middle"/>
+<pin name="PIN_28" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="PIN_51" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="PIN_52" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="PIN_24" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="PIN_21" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="GND_2" x="-43.18" y="-22.86" length="middle"/>
+<pin name="+3.3V_1" x="-43.18" y="-38.1" length="middle"/>
+<pin name="PIN_5" x="12.7" y="20.32" length="middle" rot="R180"/>
+<pin name="PIN_2" x="12.7" y="27.94" length="middle" rot="R180"/>
+<pin name="PIN_99" x="12.7" y="-60.96" length="middle" rot="R180"/>
+<pin name="PIN_23" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="PIN_22" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="+3.3V" x="-43.18" y="-35.56" length="middle"/>
+<pin name="PIN_10" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="PIN_3" x="12.7" y="25.4" length="middle" rot="R180"/>
+<pin name="PIN_1" x="12.7" y="30.48" length="middle" rot="R180"/>
+<pin name="GND_3" x="-43.18" y="-25.4" length="middle"/>
+<pin name="PIN_55" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="PIN_65" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<pin name="GND_4" x="-43.18" y="-27.94" length="middle"/>
+<pin name="+3.3V_2" x="-43.18" y="-40.64" length="middle"/>
+<pin name="PIN_74" x="12.7" y="-25.4" length="middle" rot="R180"/>
+<pin name="GND_5" x="-43.18" y="-30.48" length="middle"/>
+<pin name="PIN_53" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="PIN_56" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<pin name="PIN_66" x="12.7" y="-17.78" length="middle" rot="R180"/>
+<pin name="PIN_72" x="12.7" y="-20.32" length="middle" rot="R180"/>
+<pin name="+3.3V_3" x="-43.18" y="-43.18" length="middle"/>
+<pin name="PIN_73" x="12.7" y="-22.86" length="middle" rot="R180"/>
+<pin name="PIN_75" x="12.7" y="-27.94" length="middle" rot="R180"/>
+<pin name="ADC_OUT_0" x="-43.18" y="20.32" length="middle"/>
+<pin name="ADC_OUT_1" x="-43.18" y="17.78" length="middle"/>
+<pin name="ADC_OUT_2" x="-43.18" y="15.24" length="middle"/>
+<pin name="ADC_OUT_3" x="-43.18" y="12.7" length="middle"/>
+<pin name="ADC_OUT_4" x="-43.18" y="10.16" length="middle"/>
+<pin name="ADC_OUT_5" x="-43.18" y="7.62" length="middle"/>
+<pin name="ADC_OUT_6" x="-43.18" y="5.08" length="middle"/>
+<pin name="ADC_OUT_7" x="-43.18" y="2.54" length="middle"/>
+<pin name="ADC_ENCODE" x="-43.18" y="-2.54" length="middle"/>
+<pin name="PIN_49" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="PIN_50" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="-43.18" y="-17.78" length="middle"/>
+<pin name="PIN_98" x="12.7" y="-58.42" length="middle" rot="R180"/>
+<pin name="PIN_97" x="12.7" y="-55.88" length="middle" rot="R180"/>
+<pin name="PIN_92" x="12.7" y="-53.34" length="middle" rot="R180"/>
+<pin name="PIN_91" x="12.7" y="-50.8" length="middle" rot="R180"/>
+<pin name="PIN_90" x="12.7" y="-48.26" length="middle" rot="R180"/>
+<pin name="PIN_88" x="12.7" y="-45.72" length="middle" rot="R180"/>
+<pin name="PIN_85" x="12.7" y="-43.18" length="middle" rot="R180"/>
+<pin name="PIN_84" x="12.7" y="-40.64" length="middle" rot="R180"/>
+<pin name="PIN_79" x="12.7" y="-38.1" length="middle" rot="R180"/>
+<pin name="PIN_78" x="12.7" y="-35.56" length="middle" rot="R180"/>
+<pin name="PIN_77" x="12.7" y="-33.02" length="middle" rot="R180"/>
+<pin name="PIN_76" x="12.7" y="-30.48" length="middle" rot="R180"/>
+<text x="-12.7" y="-25.4" size="1.778" layer="95" rot="R90">KNJN RS232 FPGA Pluto-II</text>
+<pin name="PIN_4" x="12.7" y="22.86" length="middle" rot="R180"/>
+<pin name="GND_6" x="-43.18" y="-33.02" length="middle"/>
+<pin name="TXD" x="-43.18" y="-7.62" length="middle"/>
+<pin name="RXD" x="-43.18" y="-10.16" length="middle"/>
+<pin name="VCC_UNREG" x="-43.18" y="-48.26" length="middle"/>
+<wire x1="7.62" y1="-63.5" x2="-38.1" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="-38.1" y1="-63.5" x2="-38.1" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-38.1" y1="33.02" x2="7.62" y2="33.02" width="0.254" layer="94"/>
+<wire x1="7.62" y1="33.02" x2="7.62" y2="-63.5" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KNJNRS232FPGAPLUTO-II" prefix="KNJN_FPGA">
+<gates>
+<gate name="G$1" symbol="KNJNRS232FPGAPLUTO-II" x="-35.56" y="-5.08"/>
+</gates>
+<devices>
+<device name="KNJNRS232FPGAPLUTO-II" package="KNJNRS232FPGAPLUTO-II">
+<connects>
+<connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
+<connect gate="G$1" pin="+3.3V_1" pad="+3.3V_1"/>
+<connect gate="G$1" pin="+3.3V_2" pad="+3.3V_2"/>
+<connect gate="G$1" pin="+3.3V_3" pad="+3.3V_3"/>
+<connect gate="G$1" pin="ADC_ENCODE" pad="PIN_48"/>
+<connect gate="G$1" pin="ADC_OUT_0" pad="PIN_27"/>
+<connect gate="G$1" pin="ADC_OUT_1" pad="PIN_34"/>
+<connect gate="G$1" pin="ADC_OUT_2" pad="PIN_35"/>
+<connect gate="G$1" pin="ADC_OUT_3" pad="PIN_36"/>
+<connect gate="G$1" pin="ADC_OUT_4" pad="PIN_37"/>
+<connect gate="G$1" pin="ADC_OUT_5" pad="PIN_38"/>
+<connect gate="G$1" pin="ADC_OUT_6" pad="PIN_41"/>
+<connect gate="G$1" pin="ADC_OUT_7" pad="PIN_47"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND_1" pad="GND_1"/>
+<connect gate="G$1" pin="GND_2" pad="GND_2"/>
+<connect gate="G$1" pin="GND_3" pad="GND_3"/>
+<connect gate="G$1" pin="GND_4" pad="GND_4"/>
+<connect gate="G$1" pin="GND_5" pad="GND_5"/>
+<connect gate="G$1" pin="GND_6" pad="GND_6"/>
+<connect gate="G$1" pin="PIN_1" pad="PIN_1"/>
+<connect gate="G$1" pin="PIN_10" pad="PIN_10"/>
+<connect gate="G$1" pin="PIN_2" pad="PIN_2"/>
+<connect gate="G$1" pin="PIN_21" pad="PIN_21"/>
+<connect gate="G$1" pin="PIN_22" pad="PIN_22"/>
+<connect gate="G$1" pin="PIN_23" pad="PIN_23"/>
+<connect gate="G$1" pin="PIN_24" pad="PIN_24"/>
+<connect gate="G$1" pin="PIN_28" pad="PIN_28"/>
+<connect gate="G$1" pin="PIN_3" pad="PIN_3"/>
+<connect gate="G$1" pin="PIN_4" pad="PIN_4"/>
+<connect gate="G$1" pin="PIN_49" pad="PIN_49"/>
+<connect gate="G$1" pin="PIN_5" pad="PIN_5"/>
+<connect gate="G$1" pin="PIN_50" pad="PIN_50"/>
+<connect gate="G$1" pin="PIN_51" pad="PIN_51"/>
+<connect gate="G$1" pin="PIN_52" pad="PIN_52"/>
+<connect gate="G$1" pin="PIN_53" pad="PIN_53"/>
+<connect gate="G$1" pin="PIN_55" pad="PIN_55"/>
+<connect gate="G$1" pin="PIN_56" pad="PIN_56"/>
+<connect gate="G$1" pin="PIN_65" pad="PIN_65"/>
+<connect gate="G$1" pin="PIN_66" pad="PIN_66"/>
+<connect gate="G$1" pin="PIN_72" pad="PIN_72"/>
+<connect gate="G$1" pin="PIN_73" pad="PIN_73"/>
+<connect gate="G$1" pin="PIN_74" pad="PIN_74"/>
+<connect gate="G$1" pin="PIN_75" pad="PIN_75"/>
+<connect gate="G$1" pin="PIN_76" pad="PIN_76"/>
+<connect gate="G$1" pin="PIN_77" pad="PIN_77"/>
+<connect gate="G$1" pin="PIN_78" pad="PIN_78"/>
+<connect gate="G$1" pin="PIN_79" pad="PIN_79"/>
+<connect gate="G$1" pin="PIN_84" pad="PIN_84"/>
+<connect gate="G$1" pin="PIN_85" pad="PIN_85"/>
+<connect gate="G$1" pin="PIN_88" pad="PIN_88"/>
+<connect gate="G$1" pin="PIN_90" pad="PIN_90"/>
+<connect gate="G$1" pin="PIN_91" pad="PIN_91"/>
+<connect gate="G$1" pin="PIN_92" pad="PIN_92"/>
+<connect gate="G$1" pin="PIN_97" pad="PIN_97"/>
+<connect gate="G$1" pin="PIN_98" pad="PIN_98"/>
+<connect gate="G$1" pin="PIN_99" pad="PIN_99"/>
+<connect gate="G$1" pin="RXD" pad="RXD"/>
+<connect gate="G$1" pin="TXD" pad="TXD"/>
+<connect gate="G$1" pin="VCC_UNREG" pad="VCC_UNREG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12602,6 +12886,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
+<part name="KNJN_FPGA1" library="KNJN_RS232_FPGA_Pluto-II" deviceset="KNJNRS232FPGAPLUTO-II" device="KNJNRS232FPGAPLUTO-II"/>
 </parts>
 <sheets>
 <sheet>
@@ -12910,10 +13195,73 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <plain>
 </plain>
 <instances>
+<instance part="KNJN_FPGA1" gate="G$1" x="66.04" y="66.04"/>
 </instances>
 <busses>
+<bus name="ADC_OUT_[0..7]">
+<segment>
+<wire x1="0" y1="91.44" x2="10.16" y2="91.44" width="0.762" layer="92"/>
+<wire x1="10.16" y1="91.44" x2="10.16" y2="68.58" width="0.762" layer="92"/>
+<label x="0" y="93.98" size="1.778" layer="95"/>
+</segment>
+</bus>
 </busses>
 <nets>
+<net name="ADC_OUT_0" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_0"/>
+<wire x1="22.86" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_1" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_1"/>
+<wire x1="22.86" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_2" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_2"/>
+<wire x1="22.86" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_4" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_4"/>
+<wire x1="22.86" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_5" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_5"/>
+<wire x1="22.86" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_6" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_6"/>
+<wire x1="22.86" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_7" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_7"/>
+<wire x1="22.86" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_3" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_3"/>
+<wire x1="22.86" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_ENCODE" class="0">
+<segment>
+<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_ENCODE"/>
+<wire x1="22.86" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
+<label x="-2.54" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
