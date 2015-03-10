@@ -14455,8 +14455,6 @@ Source: www.kingbright.com</description>
 <part name="RA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="C2_LPF" library="rcl" deviceset="C-US" device="C0603" value="4.7p"/>
 <part name="C1_LPF" library="rcl" deviceset="C-US" device="C0603" value="4.7p"/>
-<part name="R2_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R1_VGA" library="rcl" deviceset="R-US_" device="R0603" value="56K"/>
 <part name="U$2" library="texas-custom" deviceset="LM3671" device=""/>
 <part name="DCDCBOOST1" library="DCDCboost" deviceset="RS1-R1D" device=""/>
 <part name="C6" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
@@ -14520,6 +14518,7 @@ Source: www.kingbright.com</description>
 <part name="FPGA_STATUS_LED" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
+<part name="VGA_R_INLO" library="QuantumOptics" deviceset="POT" device="-CHEAP_3HOLE_TRIM" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14615,14 +14614,12 @@ Source: www.kingbright.com</description>
 <sheet>
 <description>VGA</description>
 <plain>
-<text x="-22.86" y="25.4" size="1.778" layer="97">3.3*10/66 V= 0.5 V</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="45.72" y="53.34"/>
 <instance part="P+5" gate="VCC" x="22.86" y="81.28"/>
 <instance part="SUPPLY11" gate="GND" x="22.86" y="10.16"/>
-<instance part="R2_VGA" gate="G$1" x="12.7" y="22.86" rot="R90"/>
-<instance part="R1_VGA" gate="G$1" x="-12.7" y="35.56"/>
+<instance part="VGA_R_INLO" gate="G$1" x="-17.78" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -14649,8 +14646,8 @@ Source: www.kingbright.com</description>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <junction x="22.86" y="68.58"/>
 <wire x1="-17.78" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R1_VGA" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="35.56" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="39.37" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="CW"/>
 </segment>
 </net>
 <net name="VGA_EN" class="0">
@@ -14685,10 +14682,10 @@ Source: www.kingbright.com</description>
 <wire x1="27.94" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="58.42" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="22.86" y="50.8"/>
-<pinref part="R2_VGA" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 <junction x="22.86" y="12.7"/>
+<wire x1="-17.78" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="CCW"/>
 </segment>
 </net>
 <net name="VGA_OUT" class="0">
@@ -14708,12 +14705,8 @@ Source: www.kingbright.com</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="INLO"/>
-<wire x1="27.94" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R2_VGA" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="35.56" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R1_VGA" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="35.56" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
-<junction x="12.7" y="35.56"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="W"/>
+<wire x1="27.94" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
