@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -248,11 +248,11 @@
 <pin name="ADC_OUT_6" x="-43.18" y="5.08" length="middle"/>
 <pin name="ADC_OUT_7" x="-43.18" y="2.54" length="middle"/>
 <pin name="ADC_ENCODE" x="-43.18" y="-2.54" length="middle"/>
-<pin name="PIN_49" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="PIN_50" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="-43.18" y="-17.78" length="middle"/>
-<pin name="PIN_98" x="12.7" y="-58.42" length="middle" rot="R180"/>
-<pin name="PIN_97" x="12.7" y="-55.88" length="middle" rot="R180"/>
+<pin name="RESET" x="12.7" y="-58.42" length="middle" rot="R180"/>
+<pin name="STATUS_LED" x="12.7" y="-55.88" length="middle" rot="R180"/>
 <pin name="PIN_92" x="12.7" y="-53.34" length="middle" rot="R180"/>
 <pin name="PIN_91" x="12.7" y="-50.8" length="middle" rot="R180"/>
 <pin name="PIN_90" x="12.7" y="-48.26" length="middle" rot="R180"/>
@@ -313,9 +313,7 @@
 <connect gate="G$1" pin="PIN_28" pad="PIN_28"/>
 <connect gate="G$1" pin="PIN_3" pad="PIN_3"/>
 <connect gate="G$1" pin="PIN_4" pad="PIN_4"/>
-<connect gate="G$1" pin="PIN_49" pad="PIN_49"/>
 <connect gate="G$1" pin="PIN_5" pad="PIN_5"/>
-<connect gate="G$1" pin="PIN_50" pad="PIN_50"/>
 <connect gate="G$1" pin="PIN_51" pad="PIN_51"/>
 <connect gate="G$1" pin="PIN_52" pad="PIN_52"/>
 <connect gate="G$1" pin="PIN_53" pad="PIN_53"/>
@@ -337,10 +335,12 @@
 <connect gate="G$1" pin="PIN_90" pad="PIN_90"/>
 <connect gate="G$1" pin="PIN_91" pad="PIN_91"/>
 <connect gate="G$1" pin="PIN_92" pad="PIN_92"/>
-<connect gate="G$1" pin="PIN_97" pad="PIN_97"/>
-<connect gate="G$1" pin="PIN_98" pad="PIN_98"/>
 <connect gate="G$1" pin="PIN_99" pad="PIN_99"/>
+<connect gate="G$1" pin="RESET" pad="PIN_98"/>
 <connect gate="G$1" pin="RXD" pad="RXD"/>
+<connect gate="G$1" pin="SCK" pad="PIN_50"/>
+<connect gate="G$1" pin="SDA" pad="PIN_49"/>
+<connect gate="G$1" pin="STATUS_LED" pad="PIN_97"/>
 <connect gate="G$1" pin="TXD" pad="TXD"/>
 <connect gate="G$1" pin="VCC_UNREG" pad="VCC_UNREG"/>
 </connects>
