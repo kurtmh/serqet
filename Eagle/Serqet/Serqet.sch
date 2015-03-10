@@ -12832,15 +12832,15 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <part name="R1_VGA" library="rcl" deviceset="R-US_" device="R0603" value="56K"/>
 <part name="U$2" library="texas-custom" deviceset="LM3671" device=""/>
 <part name="DCDCBOOST1" library="DCDCboost" deviceset="RS1-R1D" device=""/>
-<part name="C6" library="rcl" deviceset="C-US" device="C0603"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C0603"/>
-<part name="L1" library="rcl edit" deviceset="L-US" device="L1008"/>
+<part name="C6" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
+<part name="C2" library="rcl" deviceset="C-US" device="C0603" value="10uf"/>
+<part name="L1" library="rcl edit" deviceset="L-US" device="L1008" value="2.2uh"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="U$4" library="con-custom" deviceset="PIN" device=""/>
-<part name="U$6" library="con-custom" deviceset="PIN" device=""/>
+<part name="BATT+" library="con-custom" deviceset="PIN" device=""/>
+<part name="BATT-" library="con-custom" deviceset="PIN" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="CARA" deviceset="AD9283" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -13278,8 +13278,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <instance part="SUPPLY7" gate="GND" x="99.06" y="53.34"/>
 <instance part="SUPPLY8" gate="GND" x="40.64" y="22.86"/>
 <instance part="SUPPLY9" gate="GND" x="86.36" y="35.56"/>
-<instance part="U$4" gate="G$1" x="-2.54" y="66.04"/>
-<instance part="U$6" gate="G$1" x="-2.54" y="63.5"/>
+<instance part="BATT+" gate="G$1" x="-2.54" y="66.04"/>
+<instance part="BATT-" gate="G$1" x="-2.54" y="63.5"/>
 <instance part="SUPPLY12" gate="GND" x="5.08" y="48.26"/>
 <instance part="P+11" gate="VCC" x="99.06" y="71.12"/>
 </instances>
@@ -13312,7 +13312,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="86.36" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="KL"/>
+<pinref part="BATT-" gate="G$1" pin="KL"/>
 <wire x1="2.54" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="63.5" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
@@ -13346,8 +13346,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pinref part="DCDCBOOST1" gate="G$1" pin="+VIN"/>
 <wire x1="20.32" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<label x="5.08" y="71.12" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="KL"/>
+<label x="5.08" y="68.58" size="1.778" layer="95"/>
+<pinref part="BATT+" gate="G$1" pin="KL"/>
 </segment>
 </net>
 <net name="5VRAIL" class="0">
