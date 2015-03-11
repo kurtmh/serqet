@@ -12445,13 +12445,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <library name="Microprocessor">
 <packages>
 <package name="MICROPROC">
-<hole x="-7.592821875" y="5.08" drill="0.9"/>
-<hole x="7.592821875" y="5.08" drill="0.9"/>
-<hole x="-5.08" y="-12.7" drill="0.9"/>
-<hole x="-2.54" y="-12.7" drill="0.9"/>
-<hole x="0" y="-12.7" drill="0.9"/>
-<hole x="2.54" y="-12.7" drill="0.9"/>
-<hole x="5.08" y="-12.7" drill="0.9"/>
 <wire x1="9.24991875" y1="10.5" x2="-9.24991875" y2="10.5" width="0.127" layer="51"/>
 <wire x1="9.24991875" y1="10.5" x2="9.24991875" y2="-10.5" width="0.127" layer="51"/>
 <wire x1="9.24991875" y1="-10.5" x2="-9.24991875" y2="-10.5" width="0.127" layer="51"/>
@@ -12473,16 +12466,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pad name="17" x="7.592821875" y="5.08" drill="1" diameter="1.778" shape="square"/>
 <pad name="6" x="-7.592821875" y="-7.62" drill="1" diameter="1.778" shape="square"/>
 <pad name="12" x="7.592821875" y="-7.62" drill="1" diameter="1.778" shape="square"/>
-<hole x="7.592821875" y="2.54" drill="0.9"/>
-<hole x="7.592821875" y="0" drill="0.9"/>
-<hole x="7.592821875" y="-2.54" drill="0.9"/>
-<hole x="7.592821875" y="-5.08" drill="0.9"/>
-<hole x="7.592821875" y="-7.62" drill="0.9"/>
-<hole x="-7.592821875" y="2.54" drill="0.9"/>
-<hole x="-7.592821875" y="0" drill="0.9"/>
-<hole x="-7.592821875" y="-2.54" drill="0.9"/>
-<hole x="-7.592821875" y="-5.08" drill="0.9"/>
-<hole x="-7.592821875" y="-7.62" drill="0.9"/>
 </package>
 </packages>
 <symbols>
@@ -12549,61 +12532,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <library name="KNJN_RS232_FPGA_Pluto-II">
 <packages>
 <package name="KNJNRS232FPGAPLUTO-II">
-<hole x="-6.35" y="-6.35" drill="0.9"/>
-<hole x="-3.81" y="-6.35" drill="0.9"/>
 <pad name="GND" x="-6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<hole x="-1.27" y="-6.35" drill="0.9"/>
-<hole x="1.27" y="-6.35" drill="0.9"/>
-<hole x="3.81" y="-6.35" drill="0.9"/>
-<hole x="6.35" y="-6.35" drill="0.9"/>
-<hole x="8.89" y="-6.35" drill="0.9"/>
-<hole x="11.43" y="-6.35" drill="0.9"/>
-<hole x="13.97" y="-6.35" drill="0.9"/>
-<hole x="16.51" y="-6.35" drill="0.9"/>
-<hole x="16.51" y="-3.81" drill="0.9"/>
-<hole x="13.97" y="-3.81" drill="0.9"/>
-<hole x="11.43" y="-3.81" drill="0.9"/>
-<hole x="8.89" y="-3.81" drill="0.9"/>
-<hole x="6.35" y="-3.81" drill="0.9"/>
-<hole x="3.81" y="-3.81" drill="0.9"/>
-<hole x="-1.27" y="-3.81" drill="0.9"/>
-<hole x="-3.81" y="-3.81" drill="0.9"/>
-<hole x="-6.35" y="-3.81" drill="0.9"/>
-<hole x="-6.35" y="-1.27" drill="0.9"/>
-<hole x="-6.35" y="1.27" drill="0.9"/>
-<hole x="-6.35" y="3.81" drill="0.9"/>
-<hole x="-6.35" y="6.35" drill="0.9"/>
-<hole x="-6.35" y="8.89" drill="0.9"/>
-<hole x="-6.35" y="11.43" drill="0.9"/>
-<hole x="-6.35" y="13.97" drill="0.9"/>
-<hole x="-6.35" y="16.51" drill="0.9"/>
-<hole x="-6.35" y="19.05" drill="0.9"/>
-<hole x="-3.81" y="21.59" drill="0.9"/>
-<hole x="-1.27" y="21.59" drill="0.9"/>
-<hole x="1.27" y="21.59" drill="0.9"/>
-<hole x="3.81" y="21.59" drill="0.9"/>
-<hole x="6.35" y="21.59" drill="0.9"/>
-<hole x="8.89" y="21.59" drill="0.9"/>
-<hole x="11.43" y="21.59" drill="0.9"/>
-<hole x="13.97" y="21.59" drill="0.9"/>
-<hole x="16.51" y="21.59" drill="0.9"/>
-<hole x="16.51" y="-1.27" drill="0.9"/>
-<hole x="16.51" y="1.27" drill="0.9"/>
-<hole x="16.51" y="3.81" drill="0.9"/>
-<hole x="16.51" y="6.35" drill="0.9"/>
-<hole x="16.51" y="8.89" drill="0.9"/>
-<hole x="16.51" y="11.43" drill="0.9"/>
-<hole x="16.51" y="13.97" drill="0.9"/>
-<hole x="16.51" y="16.51" drill="0.9"/>
-<hole x="16.51" y="19.05" drill="0.9"/>
-<hole x="13.97" y="19.05" drill="0.9"/>
-<hole x="11.43" y="19.05" drill="0.9"/>
-<hole x="8.89" y="19.05" drill="0.9"/>
-<hole x="6.35" y="19.05" drill="0.9"/>
-<hole x="3.81" y="19.05" drill="0.9"/>
-<hole x="1.27" y="19.05" drill="0.9"/>
-<hole x="-1.27" y="19.05" drill="0.9"/>
-<hole x="-3.81" y="19.05" drill="0.9"/>
 <pad name="PIN_52" x="-3.81" y="-6.35" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_53" x="-1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_56" x="1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
@@ -12658,19 +12587,13 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="-8.89" y1="-11.43" x2="19.05" y2="-11.43" width="0.127" layer="21"/>
 <wire x1="19.05" y1="-11.43" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="-11.43" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
-<hole x="-6.35" y="21.59" drill="0.9"/>
 <pad name="PIN_27" x="-6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
 <pad name="GND_1" x="-3.81" y="21.59" drill="1" diameter="1.778" shape="square" rot="R90"/>
 <pad name="PIN_23" x="-1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<hole x="1.27" y="-3.81" drill="0.9"/>
 <pad name="PIN_55" x="1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
 <wire x1="-8.89" y1="67.31" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="46.99" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="19.05" y1="46.99" x2="19.05" y2="67.31" width="0.127" layer="21"/>
-<hole x="6" y="65" drill="0.7"/>
-<hole x="8" y="65" drill="0.7"/>
-<hole x="10" y="65" drill="0.7"/>
-<hole x="12" y="65" drill="0.7"/>
 <pad name="GND_6" x="6" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
 <pad name="TXD" x="8" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
 <pad name="RXD" x="10" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
