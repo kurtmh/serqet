@@ -14524,6 +14524,9 @@ Source: www.kingbright.com</description>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
+<part name="MICRO_STATUS_LED" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
+<part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -15486,6 +15489,9 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY22" gate="GND" x="25.4" y="58.42"/>
 <instance part="SUPPLY23" gate="GND" x="73.66" y="55.88"/>
 <instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
+<instance part="MICRO_STATUS_LED" gate="G$1" x="38.1" y="12.7" rot="R180"/>
+<instance part="SUPPLY25" gate="GND" x="38.1" y="5.08"/>
+<instance part="R16" gate="G$1" x="43.18" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -15543,6 +15549,11 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY23" gate="GND" pin="GND"/>
 <wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
+<pinref part="SUPPLY25" gate="GND" pin="GND"/>
+<wire x1="38.1" y1="10.16" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -15551,6 +15562,20 @@ Source: www.kingbright.com</description>
 <wire x1="33.02" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="VCC" pin="VCC"/>
 <wire x1="25.4" y1="45.72" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="MICRO_STATUS_LED" gate="G$1" pin="C"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="U$11" gate="G$1" pin="STATUS_LED"/>
+<wire x1="48.26" y1="20.32" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
