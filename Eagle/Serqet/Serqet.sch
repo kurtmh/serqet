@@ -14519,6 +14519,11 @@ Source: www.kingbright.com</description>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="VGA_R_INLO" library="QuantumOptics" deviceset="POT" device="-CHEAP_3HOLE_TRIM" value="10K"/>
+<part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
+<part name="P+13" library="supply1" deviceset="VCC" device=""/>
+<part name="P+14" library="supply1" deviceset="VCC" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15478,6 +15483,9 @@ Source: www.kingbright.com</description>
 </plain>
 <instances>
 <instance part="U$11" gate="G$1" x="50.8" y="55.88"/>
+<instance part="SUPPLY22" gate="GND" x="25.4" y="58.42"/>
+<instance part="SUPPLY23" gate="GND" x="73.66" y="55.88"/>
+<instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -15494,6 +15502,55 @@ Source: www.kingbright.com</description>
 <pinref part="U$11" gate="G$1" pin="SDA"/>
 <wire x1="68.58" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AC_EN" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="AC_EN"/>
+<wire x1="33.02" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="22.86" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DC_EN" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="DC_EN"/>
+<wire x1="33.02" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<label x="22.86" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POS_OFFSET_EN" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="POS_EN"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<label x="53.34" y="25.4" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="NEG_OFFSET_EN" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="NEG_EN"/>
+<wire x1="55.88" y1="33.02" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
+<label x="55.88" y="25.4" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY22" gate="GND" pin="GND"/>
+<wire x1="33.02" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$11" gate="G$1" pin="GND2"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="V_IN"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P+13" gate="VCC" pin="VCC"/>
+<wire x1="25.4" y1="45.72" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -15755,6 +15812,8 @@ Source: www.kingbright.com</description>
 </plain>
 <instances>
 <instance part="U3" gate="A" x="27.94" y="30.48"/>
+<instance part="P+14" gate="VCC" x="5.08" y="40.64"/>
+<instance part="SUPPLY24" gate="GND" x="2.54" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -15771,6 +15830,40 @@ Source: www.kingbright.com</description>
 <pinref part="U3" gate="A" pin="SCL"/>
 <wire x1="10.16" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADJ_DC_OFFSET" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="VOUTA"/>
+<wire x1="45.72" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<label x="53.34" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VGA_VDBS" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="VOUTB"/>
+<wire x1="45.72" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<label x="53.34" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="GND"/>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
+<wire x1="10.16" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="CA0"/>
+<wire x1="10.16" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="27.94" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
+<junction x="2.54" y="20.32"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="VCC"/>
+<pinref part="P+14" gate="VCC" pin="VCC"/>
+<wire x1="10.16" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="35.56" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
