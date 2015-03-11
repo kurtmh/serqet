@@ -11716,10 +11716,9 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 <package name="PIN">
 <pad name="P$1" x="0" y="0" drill="1.1"/>
 </package>
-<package name="3_PIN_SWITCH">
-<pad name="PIN_3" x="-2.54" y="0" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_2" x="0" y="0" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_1" x="2.54" y="0" drill="1" diameter="1.778" shape="square"/>
+<package name="LED_THROUGHHOLE">
+<pad name="NEG" x="-2.54" y="0" drill="1.3" diameter="3.175" shape="square"/>
+<pad name="POS" x="2.54" y="0" drill="1.3" diameter="3.175"/>
 </package>
 </packages>
 <symbols>
@@ -11727,14 +11726,13 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 <pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="3_PIN_SWITCH">
-<wire x1="-5.08" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<pin name="PIN_2" x="-10.16" y="0" length="middle"/>
-<pin name="PIN_3" x="-10.16" y="-5.08" length="middle"/>
-<pin name="PIN_1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<symbol name="LED_THROUGHHOLE">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<pin name="NEG" x="-10.16" y="0" length="middle"/>
+<pin name="POS" x="10.16" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11753,16 +11751,15 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3_PIN_SWITCH" prefix="3_PIN_SWITCH">
+<deviceset name="LED_THROUGHHOLE" prefix="LED_THROUGHOLE">
 <gates>
-<gate name="G$1" symbol="3_PIN_SWITCH" x="-2.54" y="2.54"/>
+<gate name="G$1" symbol="LED_THROUGHHOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3_PIN_SWITCH">
+<device name="" package="LED_THROUGHHOLE">
 <connects>
-<connect gate="G$1" pin="PIN_1" pad="PIN_1"/>
-<connect gate="G$1" pin="PIN_2" pad="PIN_2"/>
-<connect gate="G$1" pin="PIN_3" pad="PIN_3"/>
+<connect gate="G$1" pin="NEG" pad="NEG"/>
+<connect gate="G$1" pin="POS" pad="POS"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14482,9 +14479,13 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="MCU_R_PAIR" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="BLUETOOTH_GND" library="supply2" deviceset="GND" device=""/>
-<part name="3_PIN_SWITCH1" library="con-custom" deviceset="3_PIN_SWITCH" device=""/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
+<part name="R17" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="LED_THROUGHOLE1" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
+<part name="LED_THROUGHOLE2" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
+<part name="P+16" library="supply1" deviceset="VCC" device=""/>
+<part name="R21" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -15447,13 +15448,17 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY22" gate="GND" x="25.4" y="58.42"/>
 <instance part="SUPPLY23" gate="GND" x="73.66" y="55.88"/>
 <instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
-<instance part="MICRO_STATUS_LED" gate="G$1" x="38.1" y="12.7" rot="R180"/>
-<instance part="SUPPLY25" gate="GND" x="38.1" y="5.08"/>
+<instance part="MICRO_STATUS_LED" gate="G$1" x="38.1" y="-7.62"/>
+<instance part="SUPPLY25" gate="GND" x="38.1" y="-22.86"/>
 <instance part="R16" gate="G$1" x="43.18" y="20.32"/>
-<instance part="MCU_R_PAIR" gate="G$1" x="50.8" y="15.24" rot="R90"/>
-<instance part="BLUETOOTH_GND" gate="GND" x="50.8" y="0"/>
-<instance part="3_PIN_SWITCH1" gate="G$1" x="5.08" y="22.86" rot="R180"/>
+<instance part="MCU_R_PAIR" gate="G$1" x="50.8" y="0" rot="R90"/>
 <instance part="P+15" gate="VCC" x="-15.24" y="43.18"/>
+<instance part="R17" gate="G$1" x="22.86" y="15.24" rot="R90"/>
+<instance part="LED_THROUGHOLE1" gate="G$1" x="22.86" y="-2.54" rot="R90"/>
+<instance part="LED_THROUGHOLE2" gate="G$1" x="2.54" y="22.86" rot="R180"/>
+<instance part="P+16" gate="VCC" x="93.98" y="96.52"/>
+<instance part="R21" gate="G$1" x="86.36" y="78.74" rot="R90"/>
+<instance part="R22" gate="G$1" x="99.06" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15461,15 +15466,23 @@ Source: www.kingbright.com</description>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="SCL"/>
-<wire x1="68.58" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
-<label x="76.2" y="60.96" size="1.778" layer="95"/>
+<label x="106.68" y="60.96" size="1.778" layer="95"/>
+<wire x1="68.58" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="60.96" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<junction x="99.06" y="60.96"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="SDA"/>
-<wire x1="68.58" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<label x="76.2" y="68.58" size="1.778" layer="95"/>
+<label x="106.68" y="68.58" size="1.778" layer="95"/>
+<wire x1="68.58" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="68.58" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<junction x="86.36" y="68.58"/>
 </segment>
 </net>
 <net name="AC_EN" class="0">
@@ -15512,12 +15525,17 @@ Source: www.kingbright.com</description>
 <wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
+<pinref part="LED_THROUGHOLE1" gate="G$1" pin="NEG"/>
+<wire x1="22.86" y1="-12.7" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
-<wire x1="38.1" y1="10.16" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-17.78" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="38.1" y="-17.78"/>
 <pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
-<pinref part="BLUETOOTH_GND" gate="GND" pin="GND"/>
-<wire x1="50.8" y1="10.16" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-5.08" x2="50.8" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MICRO_STATUS_LED" gate="G$1" pin="C"/>
+<wire x1="38.1" y1="-12.7" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -15530,27 +15548,31 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
-<wire x1="-15.24" y1="40.64" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="3_PIN_SWITCH1" gate="G$1" pin="PIN_1"/>
-<wire x1="-15.24" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="40.64" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="LED_THROUGHOLE2" gate="G$1" pin="POS"/>
+<wire x1="-15.24" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="83.82" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="83.82" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="P+16" gate="VCC" pin="VCC"/>
+<wire x1="93.98" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="86.36" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+<junction x="93.98" y="86.36"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="MCU_R_PAIR" gate="G$1" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="PAIRING_BUTTON"/>
-<wire x1="50.8" y1="20.32" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="3_PIN_SWITCH1" gate="G$1" pin="PIN_2"/>
+<wire x1="50.8" y1="5.08" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="22.86" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <junction x="50.8" y="22.86"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="MICRO_STATUS_LED" gate="G$1" pin="C"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="LED_THROUGHOLE2" gate="G$1" pin="NEG"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -15558,6 +15580,29 @@ Source: www.kingbright.com</description>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="STATUS_LED"/>
 <wire x1="48.26" y1="20.32" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="PAIRING_LED"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="LED_THROUGHOLE1" gate="G$1" pin="POS"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="7.62" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
