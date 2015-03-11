@@ -14556,7 +14556,7 @@ Source: www.kingbright.com</description>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="MCU_R_PAIR" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
+<part name="BLUETOOTH_GND" library="supply2" deviceset="GND" device=""/>
 <part name="3_PIN_SWITCH1" library="con-custom" deviceset="3_PIN_SWITCH" device=""/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 </parts>
@@ -15522,7 +15522,7 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY23" gate="GND" x="73.66" y="55.88"/>
 <instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
 <instance part="MCU_R_PAIR" gate="G$1" x="50.8" y="15.24" rot="R90"/>
-<instance part="SUPPLY25" gate="GND" x="50.8" y="0"/>
+<instance part="BLUETOOTH_GND" gate="GND" x="50.8" y="0"/>
 <instance part="3_PIN_SWITCH1" gate="G$1" x="5.08" y="22.86" rot="R180"/>
 <instance part="P+15" gate="VCC" x="-15.24" y="43.18"/>
 </instances>
@@ -15584,7 +15584,7 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
-<pinref part="SUPPLY25" gate="GND" pin="GND"/>
+<pinref part="BLUETOOTH_GND" gate="GND" pin="GND"/>
 <wire x1="50.8" y1="10.16" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
