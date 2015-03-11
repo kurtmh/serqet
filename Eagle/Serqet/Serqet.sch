@@ -14362,7 +14362,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="15KEXXC" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -14457,6 +14456,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="3_PIN_SWITCH1" library="con-custom" deviceset="3_PIN_SWITCH" device=""/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 <part name="U$3" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14464,8 +14464,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <instances>
-<instance part="SUPPLY1" gate="GND" x="22.86" y="10.16"/>
 <instance part="U$3" gate="G$1" x="5.08" y="17.78"/>
+<instance part="SUPPLY1" gate="GND" x="5.08" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -14479,7 +14479,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="5.08" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 </net>
@@ -15486,9 +15487,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <wire x1="38.1" y1="10.16" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
+</segment>
+<segment>
 <pinref part="BLUETOOTH_GND" gate="GND" pin="GND"/>
-<wire x1="50.8" y1="10.16" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="2.54" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
