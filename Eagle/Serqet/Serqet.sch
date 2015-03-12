@@ -14345,6 +14345,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R_ENBL_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R_EN_LPF" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R_MODE_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R_OFFSET_BYPASS" library="rcl" deviceset="R-US_" device="R0603" value="0K"/>
 </parts>
 <sheets>
 <sheet>
@@ -15522,6 +15523,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R7_DCOFF" gate="G$1" x="91.44" y="33.02"/>
 <instance part="SUPPLY15" gate="GND" x="35.56" y="7.62"/>
 <instance part="P+3" gate="VCC" x="-12.7" y="15.24"/>
+<instance part="R_OFFSET_BYPASS" gate="G$1" x="-38.1" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -15668,14 +15670,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="ATTEN_OUT" class="0">
 <segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_1"/>
-<wire x1="-2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-55.88" y="-2.54" size="1.778" layer="95"/>
-<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-2.54"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_2"/>
-<wire x1="-12.7" y1="-15.24" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DC_OFFSET_OUT" class="0">
@@ -15736,6 +15733,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-7.62" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-7.62" y="-10.16"/>
 <label x="-55.88" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NET_IO_1" class="0">
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_1"/>
+<wire x1="-2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_2"/>
+<wire x1="-12.7" y1="-15.24" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-2.54" x2="-33.02" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-2.54"/>
 </segment>
 </net>
 </nets>
