@@ -14339,6 +14339,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="BATTERY" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
+<part name="BYPASS_ATTEN_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
+<part name="VGA_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
+<part name="BYPASS_ATTEN_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14899,6 +14902,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+9" gate="VCC" x="20.32" y="38.1"/>
 <instance part="P+10" gate="VCC" x="68.58" y="78.74"/>
 <instance part="SUPPLY19" gate="GND" x="20.32" y="22.86"/>
+<instance part="BYPASS_ATTEN_TO_ADC" gate="G$1" x="-10.16" y="48.26" rot="R90"/>
+<instance part="VGA_TO_ADC" gate="G$1" x="-20.32" y="48.26" rot="R90"/>
 </instances>
 <busses>
 <bus name="ADC_OUT_[0..7]">
@@ -14910,23 +14915,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </bus>
 </busses>
 <nets>
-<net name="VGA_OUT" class="0">
-<segment>
-<pinref part="D1_ADC" gate="1" pin="A"/>
-<wire x1="-2.54" y1="50.8" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="D2_ADC" gate="1" pin="C"/>
-<wire x1="5.08" y1="55.88" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-2.54" y="55.88"/>
-<wire x1="5.08" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="55.88" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="5.08" y="55.88"/>
-<pinref part="U1" gate="U" pin="AIN"/>
-<wire x1="12.7" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="55.88" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
-<label x="-10.16" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="U" pin="GND"/>
@@ -15045,6 +15033,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U1" gate="U" pin="D7"/>
 <wire x1="81.28" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_IN" class="0">
+<segment>
+<pinref part="D1_ADC" gate="1" pin="A"/>
+<wire x1="-2.54" y1="50.8" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="D2_ADC" gate="1" pin="C"/>
+<wire x1="5.08" y1="55.88" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-2.54" y="55.88"/>
+<wire x1="5.08" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="5.08" y="55.88"/>
+<pinref part="U1" gate="U" pin="AIN"/>
+<wire x1="12.7" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
+<label x="-10.16" y="58.42" size="1.778" layer="95"/>
+<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="55.88" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-10.16" y="55.88"/>
+<pinref part="VGA_TO_ADC" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ATTEN_OUT" class="0">
+<segment>
+<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="43.18" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
+<label x="-10.16" y="40.64" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="VGA_OUT" class="0">
+<segment>
+<pinref part="VGA_TO_ADC" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="43.18" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="-20.32" y="40.64" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
@@ -15271,6 +15296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+16" gate="VCC" x="93.98" y="96.52"/>
 <instance part="R21" gate="G$1" x="86.36" y="78.74" rot="R90"/>
 <instance part="R22" gate="G$1" x="99.06" y="78.74" rot="R90"/>
+<instance part="BYPASS_ATTEN_MICRO" gate="G$1" x="30.48" y="35.56" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -15424,11 +15450,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="73.66" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BYPASS_ADC" class="0">
+<net name="N$26" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="BYPASS_ADC"/>
-<wire x1="48.26" y1="33.02" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
-<label x="48.26" y="27.94" size="1.778" layer="95"/>
+<pinref part="BYPASS_ATTEN_MICRO" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="33.02" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ATTEN_OUT" class="0">
+<segment>
+<pinref part="BYPASS_ATTEN_MICRO" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<label x="10.16" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
