@@ -11614,8 +11614,8 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 <library name="con-custom">
 <packages>
 <package name="LED_THROUGHHOLE">
-<pad name="NEG" x="-2.54" y="0" drill="1.3" diameter="3.175" shape="square"/>
-<pad name="POS" x="2.54" y="0" drill="1.3" diameter="3.175"/>
+<pad name="NEG" x="-2.54" y="0" drill="2" diameter="3.81" shape="square"/>
+<pad name="POS" x="2.54" y="0" drill="2" diameter="3.81"/>
 </package>
 </packages>
 <symbols>
@@ -12407,40 +12407,40 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <library name="KNJN_RS232_FPGA_Pluto-II">
 <packages>
 <package name="KNJNRS232FPGAPLUTO-II">
-<pad name="GND" x="-6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_76" x="16.51" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_77" x="16.51" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_50" x="-6.35" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_49" x="-6.35" y="-1.27" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_48" x="-6.35" y="1.27" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_47" x="-6.35" y="3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_41" x="-6.35" y="6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_38" x="-6.35" y="8.89" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_37" x="-6.35" y="11.43" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_36" x="-6.35" y="13.97" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_35" x="-6.35" y="16.51" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_34" x="-6.35" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_97" x="16.51" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_98" x="16.51" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_92" x="16.51" y="16.51" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_91" x="16.51" y="13.97" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_90" x="16.51" y="11.43" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_88" x="16.51" y="8.89" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_85" x="16.51" y="6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_84" x="16.51" y="3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_79" x="16.51" y="1.27" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_78" x="16.51" y="-1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="GND" x="-6.35" y="-6.35" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_76" x="16.51" y="-6.35" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_77" x="16.51" y="-3.81" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_50" x="-6.35" y="-3.81" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_49" x="-6.35" y="-1.27" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_48" x="-6.35" y="1.27" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_47" x="-6.35" y="3.81" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_41" x="-6.35" y="6.35" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_38" x="-6.35" y="8.89" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_37" x="-6.35" y="11.43" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_36" x="-6.35" y="13.97" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_35" x="-6.35" y="16.51" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_34" x="-6.35" y="19.05" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_97" x="16.51" y="19.05" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_98" x="16.51" y="21.59" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_92" x="16.51" y="16.51" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_91" x="16.51" y="13.97" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_90" x="16.51" y="11.43" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_88" x="16.51" y="8.89" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_85" x="16.51" y="6.35" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_84" x="16.51" y="3.81" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_79" x="16.51" y="1.27" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="PIN_78" x="16.51" y="-1.27" drill="0.8" diameter="1.778" shape="square"/>
 <wire x1="-8.89" y1="-11.43" x2="19.05" y2="-11.43" width="0.127" layer="21"/>
 <wire x1="19.05" y1="-11.43" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="-11.43" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
-<pad name="PIN_27" x="-6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
+<pad name="PIN_27" x="-6.35" y="21.59" drill="0.8" diameter="1.778" shape="square"/>
 <wire x1="-8.89" y1="67.31" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="46.99" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="19.05" y1="46.99" x2="19.05" y2="67.31" width="0.127" layer="21"/>
-<pad name="GND_6" x="6" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="TXD" x="8" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="RXD" x="10" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
-<pad name="VCC_UNREG" x="12" y="65" drill="0.8" diameter="1.4" shape="long" rot="R90"/>
+<pad name="GND_6" x="6" y="65" drill="1" diameter="1.4" shape="long" rot="R90"/>
+<pad name="TXD" x="8" y="65" drill="1" diameter="1.4" shape="long" rot="R90"/>
+<pad name="RXD" x="10" y="65" drill="1" diameter="1.4" shape="long" rot="R90"/>
+<pad name="VCC_UNREG" x="12" y="65" drill="1" diameter="1.4" shape="long" rot="R90"/>
 <wire x1="4.75" y1="67.25" x2="13.25" y2="67.25" width="0.127" layer="21"/>
 <wire x1="13.25" y1="67.25" x2="13.25" y2="62.75" width="0.127" layer="21"/>
 <wire x1="13.25" y1="62.75" x2="4.75" y2="62.75" width="0.127" layer="21"/>
@@ -14342,6 +14342,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="BYPASS_ATTEN_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
 <part name="VGA_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
 <part name="BYPASS_ATTEN_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
+<part name="R_ENBL_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R_EN_LPF" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R_MODE_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14443,6 +14446,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+5" gate="VCC" x="22.86" y="81.28"/>
 <instance part="SUPPLY11" gate="GND" x="22.86" y="10.16"/>
 <instance part="VGA_R_INLO" gate="G$1" x="-17.78" y="35.56"/>
+<instance part="R_ENBL_VGA" gate="G$1" x="12.7" y="60.96"/>
+<instance part="R_MODE_VGA" gate="G$1" x="2.54" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -14468,16 +14473,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="27.94" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <junction x="22.86" y="68.58"/>
-<wire x1="-17.78" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="39.37" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="VGA_R_INLO" gate="G$1" pin="CW"/>
-</segment>
-</net>
-<net name="VGA_EN" class="0">
-<segment>
-<pinref part="VGA" gate="A" pin="ENBL"/>
-<wire x1="27.94" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="-5.08" y="60.96" size="1.778" layer="95"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="60.96" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<junction x="7.62" y="71.12"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="48.26" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-5.08" y="71.12"/>
 </segment>
 </net>
 <net name="VGA_VDBS" class="0">
@@ -14522,7 +14529,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="VGA" gate="A" pin="MODE"/>
 <wire x1="27.94" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<label x="-7.62" y="48.26" size="1.778" layer="95"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14530,6 +14537,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="VGA" gate="A" pin="INLO"/>
 <pinref part="VGA_R_INLO" gate="G$1" pin="W"/>
 <wire x1="27.94" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="ENBL"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14541,13 +14555,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="OP_AMP_LPF" gate="G$1" x="45.72" y="50.8"/>
 <instance part="SUPPLY10" gate="GND" x="10.16" y="17.78"/>
-<instance part="P+4" gate="VCC" x="40.64" y="71.12"/>
+<instance part="P+4" gate="VCC" x="40.64" y="78.74"/>
 <instance part="R1_LPF" gate="G$1" x="-15.24" y="48.26"/>
 <instance part="R2_LPF" gate="G$1" x="-2.54" y="48.26"/>
 <instance part="RB_LPF" gate="G$1" x="20.32" y="27.94" rot="R90"/>
 <instance part="RA_LPF" gate="G$1" x="33.02" y="35.56"/>
 <instance part="C2_LPF" gate="G$1" x="2.54" y="35.56"/>
 <instance part="C1_LPF" gate="G$1" x="17.78" y="66.04" rot="R90"/>
+<instance part="R_EN_LPF" gate="G$1" x="58.42" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -14581,7 +14596,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="38.1" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="35.56" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="50.8"/>
-<wire x1="48.26" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 <label x="63.5" y="50.8" size="1.778" layer="95"/>
 <pinref part="C1_LPF" gate="G$1" pin="2"/>
 <pinref part="RA_LPF" gate="G$1" pin="2"/>
@@ -14624,17 +14639,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="OP_AMP_LPF" gate="G$1" pin="VCC"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="OP_AMP_LPF" gate="G$1" pin="VCC"/>
 <wire x1="40.64" y1="55.88" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R_EN_LPF" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="68.58" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="43.18" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<junction x="40.64" y="68.58"/>
 </segment>
 </net>
-<net name="LPF_EN" class="0">
+<net name="N$28" class="0">
 <segment>
 <pinref part="OP_AMP_LPF" gate="G$1" pin="ENABLE"/>
 <wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<label x="63.5" y="43.18" size="1.778" layer="95"/>
+<pinref part="R_EN_LPF" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14646,9 +14666,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="FPGA" gate="G$1" x="66.04" y="66.04"/>
 <instance part="SUPPLY20" gate="GND" x="-25.4" y="40.64"/>
-<instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52" rot="R180"/>
+<instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52"/>
 <instance part="R1_FPGA" gate="G$1" x="2.54" y="96.52" rot="R90"/>
-<instance part="SUPPLY21" gate="GND" x="-10.16" y="88.9"/>
+<instance part="SUPPLY21" gate="GND" x="-10.16" y="86.36"/>
 </instances>
 <busses>
 <bus name="ADC_OUT_[0..7]">
@@ -14735,9 +14755,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="15.24" y="48.26"/>
 </segment>
 <segment>
-<pinref part="FPGA_STATUS_LED" gate="G$1" pin="A"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="-10.16" y1="91.44" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="FPGA_STATUS_LED" gate="G$1" pin="C"/>
+<wire x1="-10.16" y1="88.9" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -14761,18 +14781,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R1_FPGA" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R1_FPGA" gate="G$1" pin="2"/>
-<pinref part="FPGA_STATUS_LED" gate="G$1" pin="C"/>
-<wire x1="-10.16" y1="101.6" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="FPGA" gate="G$1" pin="RESET"/>
 <wire x1="22.86" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
 <label x="10.16" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="FPGA_STATUS_LED" gate="G$1" pin="A"/>
+<wire x1="-10.16" y1="99.06" x2="-10.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R1_FPGA" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="104.14" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
