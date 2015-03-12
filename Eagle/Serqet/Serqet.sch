@@ -14342,6 +14342,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="BYPASS_ATTEN_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
 <part name="VGA_TO_ADC" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
 <part name="BYPASS_ATTEN_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="0K"/>
+<part name="R_ENBL_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R_EN_LPF" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R_MODE_VGA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14443,6 +14446,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+5" gate="VCC" x="22.86" y="81.28"/>
 <instance part="SUPPLY11" gate="GND" x="22.86" y="10.16"/>
 <instance part="VGA_R_INLO" gate="G$1" x="-17.78" y="35.56"/>
+<instance part="R_ENBL_VGA" gate="G$1" x="12.7" y="60.96"/>
+<instance part="R_MODE_VGA" gate="G$1" x="2.54" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -14468,16 +14473,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="27.94" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <junction x="22.86" y="68.58"/>
-<wire x1="-17.78" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="39.37" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="VGA_R_INLO" gate="G$1" pin="CW"/>
-</segment>
-</net>
-<net name="VGA_EN" class="0">
-<segment>
-<pinref part="VGA" gate="A" pin="ENBL"/>
-<wire x1="27.94" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="-5.08" y="60.96" size="1.778" layer="95"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="60.96" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<junction x="7.62" y="71.12"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="48.26" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-5.08" y="71.12"/>
 </segment>
 </net>
 <net name="VGA_VDBS" class="0">
@@ -14522,7 +14529,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="VGA" gate="A" pin="MODE"/>
 <wire x1="27.94" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<label x="-7.62" y="48.26" size="1.778" layer="95"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14530,6 +14537,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="VGA" gate="A" pin="INLO"/>
 <pinref part="VGA_R_INLO" gate="G$1" pin="W"/>
 <wire x1="27.94" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="ENBL"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14541,13 +14555,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="OP_AMP_LPF" gate="G$1" x="45.72" y="50.8"/>
 <instance part="SUPPLY10" gate="GND" x="10.16" y="17.78"/>
-<instance part="P+4" gate="VCC" x="40.64" y="71.12"/>
+<instance part="P+4" gate="VCC" x="40.64" y="78.74"/>
 <instance part="R1_LPF" gate="G$1" x="-15.24" y="48.26"/>
 <instance part="R2_LPF" gate="G$1" x="-2.54" y="48.26"/>
 <instance part="RB_LPF" gate="G$1" x="20.32" y="27.94" rot="R90"/>
 <instance part="RA_LPF" gate="G$1" x="33.02" y="35.56"/>
 <instance part="C2_LPF" gate="G$1" x="2.54" y="35.56"/>
 <instance part="C1_LPF" gate="G$1" x="17.78" y="66.04" rot="R90"/>
+<instance part="R_EN_LPF" gate="G$1" x="58.42" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -14581,7 +14596,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="38.1" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="35.56" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="50.8"/>
-<wire x1="48.26" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 <label x="63.5" y="50.8" size="1.778" layer="95"/>
 <pinref part="C1_LPF" gate="G$1" pin="2"/>
 <pinref part="RA_LPF" gate="G$1" pin="2"/>
@@ -14624,9 +14639,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="OP_AMP_LPF" gate="G$1" pin="VCC"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="OP_AMP_LPF" gate="G$1" pin="VCC"/>
 <wire x1="40.64" y1="55.88" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R_EN_LPF" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="68.58" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="43.18" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<junction x="40.64" y="68.58"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="OP_AMP_LPF" gate="G$1" pin="ENABLE"/>
+<wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R_EN_LPF" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
