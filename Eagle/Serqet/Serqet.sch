@@ -14282,7 +14282,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5_COUPLING" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="POT_COUPLING" library="QuantumOptics" deviceset="POT" device="-CHEAP_3HOLE_TRIM" value="10K"/>
 <part name="R1_COUPLING" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="C1_COUPLING" library="rcl" deviceset="C-US" device="C0603" value="9.4nF"/>
+<part name="C1_COUPLING" library="rcl" deviceset="C-US" device="C0603" value="9.1nF"/>
 <part name="BILATERAL_COUPLING" library="SparkFun-DigitalIC" deviceset="TC74HC4066AFT" device=""/>
 <part name="BILATERAL_DCOFF" library="SparkFun-DigitalIC" deviceset="TC74HC4066AFT" device=""/>
 <part name="OP_AMP1_DCOFF" library="25AA02E48" deviceset="OPA355" device=""/>
