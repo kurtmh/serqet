@@ -14646,9 +14646,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="FPGA" gate="G$1" x="66.04" y="66.04"/>
 <instance part="SUPPLY20" gate="GND" x="-25.4" y="40.64"/>
-<instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52" rot="R180"/>
+<instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52"/>
 <instance part="R1_FPGA" gate="G$1" x="2.54" y="96.52" rot="R90"/>
-<instance part="SUPPLY21" gate="GND" x="-10.16" y="88.9"/>
+<instance part="SUPPLY21" gate="GND" x="-10.16" y="86.36"/>
 </instances>
 <busses>
 <bus name="ADC_OUT_[0..7]">
@@ -14735,9 +14735,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="15.24" y="48.26"/>
 </segment>
 <segment>
-<pinref part="FPGA_STATUS_LED" gate="G$1" pin="A"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="-10.16" y1="91.44" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="FPGA_STATUS_LED" gate="G$1" pin="C"/>
+<wire x1="-10.16" y1="88.9" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -14761,18 +14761,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R1_FPGA" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R1_FPGA" gate="G$1" pin="2"/>
-<pinref part="FPGA_STATUS_LED" gate="G$1" pin="C"/>
-<wire x1="-10.16" y1="101.6" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="FPGA" gate="G$1" pin="RESET"/>
 <wire x1="22.86" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
 <label x="10.16" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="FPGA_STATUS_LED" gate="G$1" pin="A"/>
+<wire x1="-10.16" y1="99.06" x2="-10.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R1_FPGA" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="104.14" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
