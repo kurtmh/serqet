@@ -12356,14 +12356,14 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pin name="GND" x="-17.78" y="5.08" length="middle"/>
 <pin name="V_IN" x="-17.78" y="2.54" length="middle"/>
 <pin name="PAIRING_LED" x="-5.08" y="-22.86" length="middle" rot="R90"/>
-<pin name="STATUS_LED" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="BYPASS_ADC" x="-2.54" y="-22.86" length="middle" rot="R90"/>
 <pin name="PAIRING_BUTTON" x="0" y="-22.86" length="middle" rot="R90"/>
 <pin name="POS_EN" x="2.54" y="-22.86" length="middle" rot="R90"/>
 <pin name="NEG_EN" x="5.08" y="-22.86" length="middle" rot="R90"/>
 <pin name="GND2" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="SCL" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="OFF_DAC" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="(VGA_DAC)" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="STATUS_LED" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="RESET" x="17.78" y="10.16" length="middle" rot="R180"/>
 <pin name="SDA" x="17.78" y="12.7" length="middle" rot="R180"/>
 <pin name="VDD" x="17.78" y="15.24" length="middle" rot="R180"/>
 <text x="-12.446" y="18.288" size="1.778" layer="95">&gt;NAME</text>
@@ -12378,19 +12378,19 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <devices>
 <device name="" package="MICROPROC">
 <connects>
-<connect gate="G$1" pin="(VGA_DAC)" pad="15"/>
 <connect gate="G$1" pin="AC_EN" pad="3"/>
+<connect gate="G$1" pin="BYPASS_ADC" pad="8"/>
 <connect gate="G$1" pin="DC_EN" pad="4"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="GND2" pad="12"/>
 <connect gate="G$1" pin="NEG_EN" pad="11"/>
-<connect gate="G$1" pin="OFF_DAC" pad="14"/>
 <connect gate="G$1" pin="PAIRING_BUTTON" pad="9"/>
 <connect gate="G$1" pin="PAIRING_LED" pad="7"/>
 <connect gate="G$1" pin="POS_EN" pad="10"/>
+<connect gate="G$1" pin="RESET" pad="15"/>
 <connect gate="G$1" pin="SCL" pad="13"/>
 <connect gate="G$1" pin="SDA" pad="16"/>
-<connect gate="G$1" pin="STATUS_LED" pad="8"/>
+<connect gate="G$1" pin="STATUS_LED" pad="14"/>
 <connect gate="G$1" pin="SWCLK" pad="1"/>
 <connect gate="G$1" pin="SWDIO" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="17"/>
@@ -15260,9 +15260,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY22" gate="GND" x="25.4" y="58.42"/>
 <instance part="SUPPLY23" gate="GND" x="73.66" y="55.88"/>
 <instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
-<instance part="MICRO_STATUS_LED" gate="G$1" x="38.1" y="-7.62"/>
-<instance part="SUPPLY25" gate="GND" x="38.1" y="-22.86"/>
-<instance part="R16" gate="G$1" x="43.18" y="20.32"/>
+<instance part="MICRO_STATUS_LED" gate="G$1" x="88.9" y="48.26"/>
+<instance part="SUPPLY25" gate="GND" x="88.9" y="-25.4"/>
+<instance part="R16" gate="G$1" x="83.82" y="63.5" rot="R180"/>
 <instance part="MCU_R_PAIR" gate="G$1" x="50.8" y="0" rot="R90"/>
 <instance part="P+15" gate="VCC" x="-15.24" y="43.18"/>
 <instance part="R17" gate="G$1" x="22.86" y="15.24" rot="R90"/>
@@ -15340,14 +15340,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="LED_THROUGHOLE1" gate="G$1" pin="NEG"/>
 <wire x1="22.86" y1="-12.7" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-17.78" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="38.1" y="-17.78"/>
+<wire x1="22.86" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-17.78" x2="88.9" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="88.9" y="-17.78"/>
 <pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-5.08" x2="50.8" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="MICRO_STATUS_LED" gate="G$1" pin="C"/>
-<wire x1="38.1" y1="-12.7" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="43.18" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -15391,7 +15391,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="STATUS_LED"/>
-<wire x1="48.26" y1="20.32" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -15414,7 +15414,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="63.5" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
