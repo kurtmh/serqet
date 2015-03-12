@@ -14326,15 +14326,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="MICRO_STATUS_LED" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
-<part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="MCU_R_PAIR" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R3_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R5_MICRO" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
-<part name="R17" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="LED_THROUGHOLE1" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
-<part name="LED_THROUGHOLE2" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
+<part name="R4_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="LED_THROUGHOLE" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
+<part name="PAIRING_SWITCH" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
 <part name="P+16" library="supply1" deviceset="VCC" device=""/>
-<part name="R21" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R1_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R2_MICRO" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="BNC" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -15287,15 +15287,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+13" gate="VCC" x="25.4" y="50.8"/>
 <instance part="MICRO_STATUS_LED" gate="G$1" x="88.9" y="48.26"/>
 <instance part="SUPPLY25" gate="GND" x="88.9" y="-25.4"/>
-<instance part="R16" gate="G$1" x="83.82" y="63.5" rot="R180"/>
-<instance part="MCU_R_PAIR" gate="G$1" x="50.8" y="0" rot="R90"/>
+<instance part="R3_MICRO" gate="G$1" x="83.82" y="63.5" rot="R180"/>
+<instance part="R5_MICRO" gate="G$1" x="50.8" y="0" rot="R90"/>
 <instance part="P+15" gate="VCC" x="-15.24" y="43.18"/>
-<instance part="R17" gate="G$1" x="22.86" y="15.24" rot="R90"/>
-<instance part="LED_THROUGHOLE1" gate="G$1" x="22.86" y="-2.54" rot="R90"/>
-<instance part="LED_THROUGHOLE2" gate="G$1" x="2.54" y="22.86" rot="R180"/>
+<instance part="R4_MICRO" gate="G$1" x="22.86" y="15.24" rot="R90"/>
+<instance part="LED_THROUGHOLE" gate="G$1" x="22.86" y="-2.54" rot="R90"/>
+<instance part="PAIRING_SWITCH" gate="G$1" x="2.54" y="22.86" rot="R180"/>
 <instance part="P+16" gate="VCC" x="93.98" y="96.52"/>
-<instance part="R21" gate="G$1" x="86.36" y="78.74" rot="R90"/>
-<instance part="R22" gate="G$1" x="99.06" y="78.74" rot="R90"/>
+<instance part="R1_MICRO" gate="G$1" x="86.36" y="78.74" rot="R90"/>
+<instance part="R2_MICRO" gate="G$1" x="99.06" y="78.74" rot="R90"/>
 <instance part="BYPASS_ATTEN_MICRO" gate="G$1" x="30.48" y="35.56" rot="R270"/>
 </instances>
 <busses>
@@ -15306,7 +15306,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$11" gate="G$1" pin="SCL"/>
 <label x="106.68" y="60.96" size="1.778" layer="95"/>
 <wire x1="68.58" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R2_MICRO" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="60.96" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
 <junction x="99.06" y="60.96"/>
@@ -15317,7 +15317,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$11" gate="G$1" pin="SDA"/>
 <label x="106.68" y="68.58" size="1.778" layer="95"/>
 <wire x1="68.58" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R1_MICRO" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="68.58" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <junction x="86.36" y="68.58"/>
@@ -15363,13 +15363,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_THROUGHOLE1" gate="G$1" pin="NEG"/>
+<pinref part="LED_THROUGHOLE" gate="G$1" pin="NEG"/>
 <wire x1="22.86" y1="-12.7" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <wire x1="22.86" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-17.78" x2="88.9" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="88.9" y="-17.78"/>
-<pinref part="MCU_R_PAIR" gate="G$1" pin="1"/>
+<pinref part="R5_MICRO" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-5.08" x2="50.8" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="MICRO_STATUS_LED" gate="G$1" pin="C"/>
@@ -15387,13 +15387,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
 <wire x1="-15.24" y1="40.64" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="LED_THROUGHOLE2" gate="G$1" pin="POS"/>
+<pinref part="PAIRING_SWITCH" gate="G$1" pin="POS"/>
 <wire x1="-15.24" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R1_MICRO" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="83.82" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R2_MICRO" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="83.82" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+16" gate="VCC" pin="VCC"/>
@@ -15404,18 +15404,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="MCU_R_PAIR" gate="G$1" pin="2"/>
+<pinref part="R5_MICRO" gate="G$1" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="PAIRING_BUTTON"/>
 <wire x1="50.8" y1="5.08" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="22.86" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <junction x="50.8" y="22.86"/>
-<pinref part="LED_THROUGHOLE2" gate="G$1" pin="NEG"/>
+<pinref part="PAIRING_SWITCH" gate="G$1" pin="NEG"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R3_MICRO" gate="G$1" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="STATUS_LED"/>
 <wire x1="78.74" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
 </segment>
@@ -15426,19 +15426,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.72" y1="33.02" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="27.94" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R4_MICRO" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="LED_THROUGHOLE1" gate="G$1" pin="POS"/>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="LED_THROUGHOLE" gate="G$1" pin="POS"/>
+<pinref part="R4_MICRO" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R3_MICRO" gate="G$1" pin="1"/>
 <pinref part="MICRO_STATUS_LED" gate="G$1" pin="A"/>
 <wire x1="88.9" y1="63.5" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
