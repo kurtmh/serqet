@@ -14458,6 +14458,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="U$3" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="C4" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -15837,7 +15838,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="U3" gate="A" x="27.94" y="30.48"/>
 <instance part="P+14" gate="VCC" x="5.08" y="40.64"/>
-<instance part="SUPPLY24" gate="GND" x="2.54" y="15.24"/>
+<instance part="SUPPLY24" gate="GND" x="2.54" y="0"/>
+<instance part="C4" gate="G$1" x="7.62" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -15875,11 +15877,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="A" pin="GND"/>
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
 <wire x1="10.16" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="20.32" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="CA0"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="27.94" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
 <junction x="2.54" y="20.32"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="91"/>
+<junction x="2.54" y="5.08"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -15888,6 +15894,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="P+14" gate="VCC" pin="VCC"/>
 <wire x1="10.16" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="REF"/>
+<wire x1="7.62" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
