@@ -14260,21 +14260,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C1_LPF" library="rcl" deviceset="C-US" device="C0603" value="4.7p"/>
 <part name="3.3VREG" library="texas-custom" deviceset="LM3671" device=""/>
 <part name="5VREG" library="DCDCboost" deviceset="RS1-R1D" device=""/>
-<part name="CVREG4.7P" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
-<part name="CVREG10U" library="rcl" deviceset="C-US" device="C0603" value="10uf"/>
-<part name="LVREG2.2U" library="rcl edit" deviceset="L-US" device="L1008" value="2.2uh"/>
+<part name="C1_POWER" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
+<part name="C2_POWER" library="rcl" deviceset="C-US" device="C0603" value="10uf"/>
+<part name="L1_POWER" library="rcl edit" deviceset="L-US" device="L1008" value="2.2uh"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="CARA" deviceset="AD9283" device=""/>
-<part name="C1ADC" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="C1_ADC" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="D1_ADC" library="diode" deviceset="1N4933" device="" value=""/>
 <part name="D2_ADC" library="diode" deviceset="1N4933" device="" value=""/>
 <part name="POT_ADC" library="QuantumOptics" deviceset="POT" device="-CHEAP_3HOLE_TRIM" value="10k"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="OP_COUPLING" library="25AA02E48" deviceset="OPA355" device=""/>
+<part name="OP_AMP_COUPLING" library="25AA02E48" deviceset="OPA355" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="R4_COUPLING" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R2_COUPLING" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
@@ -14312,11 +14312,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
-<part name="KNJN_FPGA1" library="KNJN_RS232_FPGA_Pluto-II" deviceset="KNJNRS232FPGAPLUTO-II" device="KNJNRS232FPGAPLUTO-II"/>
+<part name="FPGA" library="KNJN_RS232_FPGA_Pluto-II" deviceset="KNJNRS232FPGAPLUTO-II" device="KNJNRS232FPGAPLUTO-II"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="LTC_By_element14_Batch_1" deviceset="LTC2633CTS8-LZ8TRMPBF" device=""/>
 <part name="FPGA_STATUS_LED" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R1_FPGA" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="VGA_R_INLO" library="QuantumOptics" deviceset="POT" device="-CHEAP_3HOLE_TRIM" value="10K"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
@@ -14644,10 +14644,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <instances>
-<instance part="KNJN_FPGA1" gate="G$1" x="66.04" y="66.04"/>
+<instance part="FPGA" gate="G$1" x="66.04" y="66.04"/>
 <instance part="SUPPLY20" gate="GND" x="-25.4" y="40.64"/>
 <instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52" rot="R180"/>
-<instance part="R15" gate="G$1" x="2.54" y="96.52" rot="R90"/>
+<instance part="R1_FPGA" gate="G$1" x="2.54" y="96.52" rot="R90"/>
 <instance part="SUPPLY21" gate="GND" x="-10.16" y="88.9"/>
 </instances>
 <busses>
@@ -14662,62 +14662,62 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="ADC_OUT_0" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_0"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_0"/>
 <wire x1="22.86" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_1" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_1"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_1"/>
 <wire x1="22.86" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_2" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_2"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_2"/>
 <wire x1="22.86" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_4" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_4"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_4"/>
 <wire x1="22.86" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_5" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_5"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_5"/>
 <wire x1="22.86" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_6" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_6"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_6"/>
 <wire x1="22.86" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_7" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_7"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_7"/>
 <wire x1="22.86" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_OUT_3" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_OUT_3"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_3"/>
 <wire x1="22.86" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_ENCODE" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="ADC_ENCODE"/>
+<pinref part="FPGA" gate="G$1" pin="ADC_ENCODE"/>
 <wire x1="22.86" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
 <label x="-2.54" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5VRAIL" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="VCC_UNREG"/>
+<pinref part="FPGA" gate="G$1" pin="VCC_UNREG"/>
 <wire x1="22.86" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
 <label x="0" y="17.78" size="1.778" layer="95"/>
 </segment>
@@ -14726,10 +14726,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 <wire x1="-25.4" y1="43.18" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_6"/>
+<pinref part="FPGA" gate="G$1" pin="GND_6"/>
 <wire x1="22.86" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="33.02" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND"/>
+<pinref part="FPGA" gate="G$1" pin="GND"/>
 <wire x1="15.24" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="48.26" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
 <junction x="15.24" y="48.26"/>
@@ -14742,35 +14742,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="SDA"/>
+<pinref part="FPGA" gate="G$1" pin="SDA"/>
 <wire x1="22.86" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
 <label x="10.16" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="SCK"/>
+<pinref part="FPGA" gate="G$1" pin="SCK"/>
 <wire x1="22.86" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
 <label x="10.16" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="STATUS_LED"/>
+<pinref part="FPGA" gate="G$1" pin="STATUS_LED"/>
 <wire x1="22.86" y1="91.44" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R1_FPGA" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R1_FPGA" gate="G$1" pin="2"/>
 <pinref part="FPGA_STATUS_LED" gate="G$1" pin="C"/>
 <wire x1="-10.16" y1="101.6" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="RESET"/>
+<pinref part="FPGA" gate="G$1" pin="RESET"/>
 <wire x1="22.86" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
 <label x="10.16" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -14784,9 +14784,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="3.3VREG" gate="G$1" x="60.96" y="60.96"/>
 <instance part="5VREG" gate="G$1" x="60.96" y="33.02" rot="R270"/>
-<instance part="CVREG4.7P" gate="G$1" x="33.02" y="63.5"/>
-<instance part="CVREG10U" gate="G$1" x="99.06" y="60.96"/>
-<instance part="LVREG2.2U" gate="G$1" x="81.28" y="66.04" rot="R90"/>
+<instance part="C1_POWER" gate="G$1" x="33.02" y="63.5"/>
+<instance part="C2_POWER" gate="G$1" x="99.06" y="60.96"/>
+<instance part="L1_POWER" gate="G$1" x="81.28" y="66.04" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="33.02" y="55.88"/>
 <instance part="SUPPLY7" gate="GND" x="99.06" y="53.34"/>
 <instance part="SUPPLY8" gate="GND" x="40.64" y="22.86"/>
@@ -14801,12 +14801,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$1" class="0">
 <segment>
 <pinref part="3.3VREG" gate="G$1" pin="SW"/>
-<pinref part="LVREG2.2U" gate="G$1" pin="1"/>
+<pinref part="L1_POWER" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="CVREG4.7P" gate="G$1" pin="2"/>
+<pinref part="C1_POWER" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="3.3VREG" gate="G$1" pin="GND"/>
 <wire x1="48.26" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
@@ -14815,7 +14815,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="33.02" y="58.42"/>
 </segment>
 <segment>
-<pinref part="CVREG10U" gate="G$1" pin="2"/>
+<pinref part="C2_POWER" gate="G$1" pin="2"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -14843,7 +14843,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="BATT" class="0">
 <segment>
 <pinref part="3.3VREG" gate="G$1" pin="VIN"/>
-<pinref part="CVREG4.7P" gate="G$1" pin="1"/>
+<pinref part="C1_POWER" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <junction x="33.02" y="66.04"/>
@@ -14874,10 +14874,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="VCC" class="0">
 <segment>
 <pinref part="3.3VREG" gate="G$1" pin="FB"/>
-<pinref part="LVREG2.2U" gate="G$1" pin="2"/>
+<pinref part="L1_POWER" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="55.88" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="CVREG10U" gate="G$1" pin="1"/>
+<pinref part="C2_POWER" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <junction x="88.9" y="66.04"/>
@@ -14894,7 +14894,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="U1" gate="U" x="58.42" y="53.34"/>
-<instance part="C1ADC" gate="G$1" x="35.56" y="60.96" rot="R270"/>
+<instance part="C1_ADC" gate="G$1" x="35.56" y="60.96" rot="R270"/>
 <instance part="D1_ADC" gate="1" x="-2.54" y="48.26" rot="R270"/>
 <instance part="D2_ADC" gate="1" x="5.08" y="48.26" rot="R90"/>
 <instance part="POT_ADC" gate="G$1" x="20.32" y="30.48" rot="R180"/>
@@ -14922,7 +14922,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 <pinref part="U1" gate="U" pin="PWRDWN"/>
 <wire x1="45.72" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C1ADC" gate="G$1" pin="2"/>
+<pinref part="C1_ADC" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="66.04" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="60.96" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
 <junction x="30.48" y="60.96"/>
@@ -14937,7 +14937,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$6" class="0">
 <segment>
 <pinref part="U1" gate="U" pin="VREFOUT"/>
-<pinref part="C1ADC" gate="G$1" pin="1"/>
+<pinref part="C1_ADC" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15080,7 +15080,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-30.48" y="-15.24" size="1.778" layer="97">bilateral switch used in DC Offset</text>
 </plain>
 <instances>
-<instance part="OP_COUPLING" gate="G$1" x="30.48" y="60.96"/>
+<instance part="OP_AMP_COUPLING" gate="G$1" x="30.48" y="60.96"/>
 <instance part="SUPPLY14" gate="GND" x="-15.24" y="15.24"/>
 <instance part="R4_COUPLING" gate="G$1" x="15.24" y="50.8"/>
 <instance part="R2_COUPLING" gate="G$1" x="-2.54" y="68.58"/>
@@ -15102,7 +15102,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="N$7" class="0">
 <segment>
-<pinref part="OP_COUPLING" gate="G$1" pin="V+"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V+"/>
 <wire x1="17.78" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="58.42" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R2_COUPLING" gate="G$1" pin="2"/>
@@ -15114,7 +15114,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="OP_COUPLING" gate="G$1" pin="V-"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V-"/>
 <wire x1="17.78" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="63.5" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R4_COUPLING" gate="G$1" pin="1"/>
@@ -15140,7 +15140,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R4_COUPLING" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<pinref part="OP_COUPLING" gate="G$1" pin="GND"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="GND"/>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 <junction x="25.4" y="50.8"/>
 </segment>
@@ -15175,7 +15175,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$8" gate="G$1" pin="I/O_3"/>
 <wire x1="-17.78" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="OP_COUPLING" gate="G$1" pin="OUT"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="OUT"/>
 <wire x1="33.02" y1="43.18" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R5_COUPLING" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
@@ -15194,7 +15194,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="10.16" y="10.16" size="1.778" layer="95"/>
 <wire x1="-17.78" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="10.16" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="OP_COUPLING" gate="G$1" pin="ENABLE"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="ENABLE"/>
 </segment>
 </net>
 <net name="DC_EN" class="0">
@@ -15252,7 +15252,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="OP_COUPLING" gate="G$1" pin="VCC"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="25.4" y1="66.04" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
