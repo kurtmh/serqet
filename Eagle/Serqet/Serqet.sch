@@ -15417,6 +15417,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="88.9" y1="63.5" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="RESET"/>
+<wire x1="68.58" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<label x="73.66" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BYPASS_ADC" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="BYPASS_ADC"/>
+<wire x1="48.26" y1="33.02" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<label x="48.26" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
