@@ -12430,23 +12430,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <packages>
 <package name="KNJNRS232FPGAPLUTO-II">
 <pad name="GND" x="-6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_52" x="-3.81" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_53" x="-1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_56" x="1.27" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_66" x="3.81" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_72" x="6.35" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="+3.3V_3" x="8.89" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_73" x="11.43" y="-6.35" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_75" x="13.97" y="-6.35" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_76" x="16.51" y="-6.35" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_77" x="16.51" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="GND_5" x="13.97" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_74" x="11.43" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="+3.3V_2" x="8.89" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="GND_4" x="6.35" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_65" x="3.81" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="GND_3" x="-1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_51" x="-3.81" y="-3.81" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_50" x="-6.35" y="-3.81" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_49" x="-6.35" y="-1.27" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_48" x="-6.35" y="1.27" drill="1" diameter="1.778" shape="square"/>
@@ -12457,22 +12442,8 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pad name="PIN_36" x="-6.35" y="13.97" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_35" x="-6.35" y="16.51" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_34" x="-6.35" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_28" x="-3.81" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_24" x="-1.27" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_21" x="1.27" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="GND_2" x="3.81" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="+3.3V_1" x="6.35" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_5" x="8.89" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_2" x="11.43" y="19.05" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_99" x="13.97" y="19.05" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_97" x="16.51" y="19.05" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_98" x="16.51" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_1" x="13.97" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_3" x="11.43" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_4" x="8.89" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_10" x="6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="+3.3V" x="3.81" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_22" x="1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_92" x="16.51" y="16.51" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_91" x="16.51" y="13.97" drill="1" diameter="1.778" shape="square"/>
 <pad name="PIN_90" x="16.51" y="11.43" drill="1" diameter="1.778" shape="square"/>
@@ -12485,9 +12456,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <wire x1="19.05" y1="-11.43" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="-11.43" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
 <pad name="PIN_27" x="-6.35" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="GND_1" x="-3.81" y="21.59" drill="1" diameter="1.778" shape="square" rot="R90"/>
-<pad name="PIN_23" x="-1.27" y="21.59" drill="1" diameter="1.778" shape="square"/>
-<pad name="PIN_55" x="1.27" y="-3.81" drill="1" diameter="1.778" shape="square"/>
 <wire x1="-8.89" y1="67.31" x2="-8.89" y2="46.99" width="0.127" layer="21"/>
 <wire x1="-8.89" y1="46.99" x2="19.05" y2="46.99" width="0.127" layer="21"/>
 <wire x1="19.05" y1="46.99" x2="19.05" y2="67.31" width="0.127" layer="21"/>
@@ -12506,37 +12474,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <symbols>
 <symbol name="KNJNRS232FPGAPLUTO-II">
 <description>KNJN RS232 FPGA Pluto-II</description>
-<pin name="GND_1" x="-43.18" y="-20.32" length="middle"/>
-<pin name="PIN_28" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="PIN_51" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="PIN_52" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="PIN_24" x="12.7" y="7.62" length="middle" rot="R180"/>
-<pin name="PIN_21" x="12.7" y="15.24" length="middle" rot="R180"/>
-<pin name="GND_2" x="-43.18" y="-22.86" length="middle"/>
-<pin name="+3.3V_1" x="-43.18" y="-38.1" length="middle"/>
-<pin name="PIN_5" x="12.7" y="20.32" length="middle" rot="R180"/>
-<pin name="PIN_2" x="12.7" y="27.94" length="middle" rot="R180"/>
-<pin name="PIN_99" x="12.7" y="-60.96" length="middle" rot="R180"/>
-<pin name="PIN_23" x="12.7" y="10.16" length="middle" rot="R180"/>
-<pin name="PIN_22" x="12.7" y="12.7" length="middle" rot="R180"/>
-<pin name="+3.3V" x="-43.18" y="-35.56" length="middle"/>
-<pin name="PIN_10" x="12.7" y="17.78" length="middle" rot="R180"/>
-<pin name="PIN_3" x="12.7" y="25.4" length="middle" rot="R180"/>
-<pin name="PIN_1" x="12.7" y="30.48" length="middle" rot="R180"/>
-<pin name="GND_3" x="-43.18" y="-25.4" length="middle"/>
-<pin name="PIN_55" x="12.7" y="-10.16" length="middle" rot="R180"/>
-<pin name="PIN_65" x="12.7" y="-15.24" length="middle" rot="R180"/>
-<pin name="GND_4" x="-43.18" y="-27.94" length="middle"/>
-<pin name="+3.3V_2" x="-43.18" y="-40.64" length="middle"/>
-<pin name="PIN_74" x="12.7" y="-25.4" length="middle" rot="R180"/>
-<pin name="GND_5" x="-43.18" y="-30.48" length="middle"/>
-<pin name="PIN_53" x="12.7" y="-7.62" length="middle" rot="R180"/>
-<pin name="PIN_56" x="12.7" y="-12.7" length="middle" rot="R180"/>
-<pin name="PIN_66" x="12.7" y="-17.78" length="middle" rot="R180"/>
-<pin name="PIN_72" x="12.7" y="-20.32" length="middle" rot="R180"/>
-<pin name="+3.3V_3" x="-43.18" y="-43.18" length="middle"/>
-<pin name="PIN_73" x="12.7" y="-22.86" length="middle" rot="R180"/>
-<pin name="PIN_75" x="12.7" y="-27.94" length="middle" rot="R180"/>
 <pin name="ADC_OUT_0" x="-43.18" y="20.32" length="middle"/>
 <pin name="ADC_OUT_1" x="-43.18" y="17.78" length="middle"/>
 <pin name="ADC_OUT_2" x="-43.18" y="15.24" length="middle"/>
@@ -12562,7 +12499,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <pin name="PIN_77" x="12.7" y="-33.02" length="middle" rot="R180"/>
 <pin name="PIN_76" x="12.7" y="-30.48" length="middle" rot="R180"/>
 <text x="-12.7" y="-25.4" size="1.778" layer="95" rot="R90">KNJN RS232 FPGA Pluto-II</text>
-<pin name="PIN_4" x="12.7" y="22.86" length="middle" rot="R180"/>
 <pin name="GND_6" x="-43.18" y="-33.02" length="middle"/>
 <pin name="TXD" x="-43.18" y="-7.62" length="middle"/>
 <pin name="RXD" x="-43.18" y="-10.16" length="middle"/>
@@ -12581,10 +12517,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <devices>
 <device name="KNJNRS232FPGAPLUTO-II" package="KNJNRS232FPGAPLUTO-II">
 <connects>
-<connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
-<connect gate="G$1" pin="+3.3V_1" pad="+3.3V_1"/>
-<connect gate="G$1" pin="+3.3V_2" pad="+3.3V_2"/>
-<connect gate="G$1" pin="+3.3V_3" pad="+3.3V_3"/>
 <connect gate="G$1" pin="ADC_ENCODE" pad="PIN_48"/>
 <connect gate="G$1" pin="ADC_OUT_0" pad="PIN_27"/>
 <connect gate="G$1" pin="ADC_OUT_1" pad="PIN_34"/>
@@ -12595,34 +12527,7 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <connect gate="G$1" pin="ADC_OUT_6" pad="PIN_41"/>
 <connect gate="G$1" pin="ADC_OUT_7" pad="PIN_47"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
-<connect gate="G$1" pin="GND_2" pad="GND_2"/>
-<connect gate="G$1" pin="GND_3" pad="GND_3"/>
-<connect gate="G$1" pin="GND_4" pad="GND_4"/>
-<connect gate="G$1" pin="GND_5" pad="GND_5"/>
 <connect gate="G$1" pin="GND_6" pad="GND_6"/>
-<connect gate="G$1" pin="PIN_1" pad="PIN_1"/>
-<connect gate="G$1" pin="PIN_10" pad="PIN_10"/>
-<connect gate="G$1" pin="PIN_2" pad="PIN_2"/>
-<connect gate="G$1" pin="PIN_21" pad="PIN_21"/>
-<connect gate="G$1" pin="PIN_22" pad="PIN_22"/>
-<connect gate="G$1" pin="PIN_23" pad="PIN_23"/>
-<connect gate="G$1" pin="PIN_24" pad="PIN_24"/>
-<connect gate="G$1" pin="PIN_28" pad="PIN_28"/>
-<connect gate="G$1" pin="PIN_3" pad="PIN_3"/>
-<connect gate="G$1" pin="PIN_4" pad="PIN_4"/>
-<connect gate="G$1" pin="PIN_5" pad="PIN_5"/>
-<connect gate="G$1" pin="PIN_51" pad="PIN_51"/>
-<connect gate="G$1" pin="PIN_52" pad="PIN_52"/>
-<connect gate="G$1" pin="PIN_53" pad="PIN_53"/>
-<connect gate="G$1" pin="PIN_55" pad="PIN_55"/>
-<connect gate="G$1" pin="PIN_56" pad="PIN_56"/>
-<connect gate="G$1" pin="PIN_65" pad="PIN_65"/>
-<connect gate="G$1" pin="PIN_66" pad="PIN_66"/>
-<connect gate="G$1" pin="PIN_72" pad="PIN_72"/>
-<connect gate="G$1" pin="PIN_73" pad="PIN_73"/>
-<connect gate="G$1" pin="PIN_74" pad="PIN_74"/>
-<connect gate="G$1" pin="PIN_75" pad="PIN_75"/>
 <connect gate="G$1" pin="PIN_76" pad="PIN_76"/>
 <connect gate="G$1" pin="PIN_77" pad="PIN_77"/>
 <connect gate="G$1" pin="PIN_78" pad="PIN_78"/>
@@ -12633,7 +12538,6 @@ www.texascomponents.com, go to Resistors, Trimpots.</description>
 <connect gate="G$1" pin="PIN_90" pad="PIN_90"/>
 <connect gate="G$1" pin="PIN_91" pad="PIN_91"/>
 <connect gate="G$1" pin="PIN_92" pad="PIN_92"/>
-<connect gate="G$1" pin="PIN_99" pad="PIN_99"/>
 <connect gate="G$1" pin="RESET" pad="PIN_98"/>
 <connect gate="G$1" pin="RXD" pad="RXD"/>
 <connect gate="G$1" pin="SCK" pad="PIN_50"/>
@@ -14433,7 +14337,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
 <part name="KNJN_FPGA1" library="KNJN_RS232_FPGA_Pluto-II" deviceset="KNJNRS232FPGAPLUTO-II" device="KNJNRS232FPGAPLUTO-II"/>
-<part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="LTC_By_element14_Batch_1" deviceset="LTC2633CTS8-LZ8TRMPBF" device=""/>
 <part name="FPGA_STATUS_LED" library="led" deviceset="LED" device="CHIP-LED0805"/>
@@ -14761,7 +14664,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="KNJN_FPGA1" gate="G$1" x="66.04" y="66.04"/>
-<instance part="P+12" gate="VCC" x="-15.24" y="40.64"/>
 <instance part="SUPPLY20" gate="GND" x="-25.4" y="40.64"/>
 <instance part="FPGA_STATUS_LED" gate="G$1" x="-10.16" y="96.52" rot="R180"/>
 <instance part="R15" gate="G$1" x="2.54" y="96.52" rot="R90"/>
@@ -14839,54 +14741,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="0" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="+3.3V"/>
-<wire x1="22.86" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="+3.3V_1"/>
-<wire x1="15.24" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="27.94" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
-<junction x="15.24" y="27.94"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="+3.3V_2"/>
-<wire x1="15.24" y1="25.4" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="25.4" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="25.4"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="+3.3V_3"/>
-<wire x1="15.24" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
-<junction x="15.24" y="30.48"/>
-<pinref part="P+12" gate="VCC" pin="VCC"/>
-<wire x1="15.24" y1="30.48" x2="-15.24" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="30.48" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 <wire x1="-25.4" y1="43.18" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="KNJN_FPGA1" gate="G$1" pin="GND_6"/>
 <wire x1="22.86" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_5"/>
-<wire x1="15.24" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_4"/>
-<wire x1="22.86" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="38.1" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
-<junction x="15.24" y="35.56"/>
-<wire x1="15.24" y1="38.1" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-<junction x="15.24" y="38.1"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_3"/>
-<wire x1="22.86" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="40.64" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
-<junction x="15.24" y="40.64"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_2"/>
-<wire x1="15.24" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="43.18" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<junction x="15.24" y="43.18"/>
-<pinref part="KNJN_FPGA1" gate="G$1" pin="GND_1"/>
-<wire x1="22.86" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="45.72" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
-<junction x="15.24" y="45.72"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="KNJN_FPGA1" gate="G$1" pin="GND"/>
 <wire x1="15.24" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="48.26" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
