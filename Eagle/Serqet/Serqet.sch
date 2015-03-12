@@ -14629,14 +14629,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="40.64" y1="55.88" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LPF_EN" class="0">
-<segment>
-<pinref part="OP_AMP_LPF" gate="G$1" pin="ENABLE"/>
-<wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<label x="63.5" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
