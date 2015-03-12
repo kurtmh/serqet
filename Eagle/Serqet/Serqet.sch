@@ -14681,54 +14681,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </bus>
 </busses>
 <nets>
-<net name="ADC_OUT_0" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_0"/>
-<wire x1="22.86" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_1" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_1"/>
-<wire x1="22.86" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_2" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_2"/>
-<wire x1="22.86" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_4" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_4"/>
-<wire x1="22.86" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_5" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_5"/>
-<wire x1="22.86" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_6" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_6"/>
-<wire x1="22.86" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_7" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_7"/>
-<wire x1="22.86" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_3" class="0">
-<segment>
-<pinref part="FPGA" gate="G$1" pin="ADC_OUT_3"/>
-<wire x1="22.86" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ADC_ENCODE" class="0">
 <segment>
 <pinref part="FPGA" gate="G$1" pin="ADC_ENCODE"/>
@@ -14796,6 +14748,54 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-10.16" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R1_FPGA" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="104.14" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_7" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_0"/>
+<wire x1="22.86" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_6" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_1"/>
+<wire x1="22.86" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_5" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_2"/>
+<wire x1="22.86" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_4" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_3"/>
+<wire x1="22.86" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_3" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_4"/>
+<wire x1="22.86" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_2" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_5"/>
+<wire x1="22.86" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_1" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_6"/>
+<wire x1="22.86" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_0" class="0">
+<segment>
+<pinref part="FPGA" gate="G$1" pin="ADC_OUT_7"/>
+<wire x1="22.86" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

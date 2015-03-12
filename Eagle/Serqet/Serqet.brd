@@ -4483,44 +4483,44 @@ design rules under a new name.</description>
 <wire x1="-66.04" y1="105.29" x2="-58" y2="132.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_0">
-<contactref element="FPGA" pad="PIN_27"/>
 <contactref element="ADC" pad="20"/>
-<wire x1="-39.37" y1="34.29" x2="-98.175" y2="88.715" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_47"/>
+<wire x1="-98.175" y1="88.715" x2="-39.37" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_1">
-<contactref element="FPGA" pad="PIN_34"/>
 <contactref element="ADC" pad="19"/>
-<wire x1="-39.37" y1="31.75" x2="-97.525" y2="88.715" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_41"/>
+<wire x1="-97.525" y1="88.715" x2="-39.37" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_2">
-<contactref element="FPGA" pad="PIN_35"/>
 <contactref element="ADC" pad="18"/>
-<wire x1="-96.875" y1="88.715" x2="-39.37" y2="29.21" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_38"/>
+<wire x1="-96.875" y1="88.715" x2="-39.37" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_4">
-<contactref element="FPGA" pad="PIN_37"/>
 <contactref element="ADC" pad="14"/>
-<wire x1="-94.275" y1="88.715" x2="-39.37" y2="24.13" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_36"/>
+<wire x1="-94.275" y1="88.715" x2="-39.37" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_5">
-<contactref element="FPGA" pad="PIN_38"/>
 <contactref element="ADC" pad="13"/>
-<wire x1="-93.625" y1="88.715" x2="-39.37" y2="21.59" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_35"/>
+<wire x1="-93.625" y1="88.715" x2="-39.37" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_6">
-<contactref element="FPGA" pad="PIN_41"/>
 <contactref element="ADC" pad="12"/>
-<wire x1="-92.975" y1="88.715" x2="-39.37" y2="19.05" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_34"/>
+<wire x1="-92.975" y1="88.715" x2="-39.37" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_7">
-<contactref element="FPGA" pad="PIN_47"/>
 <contactref element="ADC" pad="11"/>
-<wire x1="-92.325" y1="88.715" x2="-39.37" y2="16.51" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_27"/>
+<wire x1="-39.37" y1="34.29" x2="-92.325" y2="88.715" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OUT_3">
-<contactref element="FPGA" pad="PIN_36"/>
 <contactref element="ADC" pad="17"/>
-<wire x1="-96.225" y1="88.715" x2="-39.37" y2="26.67" width="0" layer="19" extent="1-1"/>
+<contactref element="FPGA" pad="PIN_37"/>
+<wire x1="-96.225" y1="88.715" x2="-39.37" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_ENCODE">
 <contactref element="FPGA" pad="PIN_48"/>
