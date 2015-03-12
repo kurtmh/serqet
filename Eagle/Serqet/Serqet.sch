@@ -11613,19 +11613,12 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 </library>
 <library name="con-custom">
 <packages>
-<package name="PIN">
-<pad name="P$1" x="0" y="0" drill="1.1"/>
-</package>
 <package name="LED_THROUGHHOLE">
 <pad name="NEG" x="-2.54" y="0" drill="1.3" diameter="3.175" shape="square"/>
 <pad name="POS" x="2.54" y="0" drill="1.3" diameter="3.175"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PIN">
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="LED_THROUGHHOLE">
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -11636,21 +11629,6 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PIN">
-<gates>
-<gate name="G$1" symbol="PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PIN">
-<connects>
-<connect gate="G$1" pin="KL" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED_THROUGHHOLE" prefix="LED_THROUGHOLE">
 <gates>
 <gate name="G$1" symbol="LED_THROUGHHOLE" x="0" y="0"/>
@@ -14280,17 +14258,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="RA" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="C2_LPF" library="rcl" deviceset="C-US" device="C0603" value="4.7p"/>
 <part name="C1_LPF" library="rcl" deviceset="C-US" device="C0603" value="4.7p"/>
-<part name="U$2" library="texas-custom" deviceset="LM3671" device=""/>
-<part name="DCDCBOOST1" library="DCDCboost" deviceset="RS1-R1D" device=""/>
-<part name="C6" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C0603" value="10uf"/>
-<part name="L1" library="rcl edit" deviceset="L-US" device="L1008" value="2.2uh"/>
+<part name="3.3VREG" library="texas-custom" deviceset="LM3671" device=""/>
+<part name="5VREG" library="DCDCboost" deviceset="RS1-R1D" device=""/>
+<part name="CVREG4.7P" library="rcl" deviceset="C-US" device="C0603" value="4.7pf"/>
+<part name="CVREG10U" library="rcl" deviceset="C-US" device="C0603" value="10uf"/>
+<part name="LVREG2.2U" library="rcl edit" deviceset="L-US" device="L1008" value="2.2uh"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="BATT+" library="con-custom" deviceset="PIN" device=""/>
-<part name="BATT-" library="con-custom" deviceset="PIN" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="CARA" deviceset="AD9283" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -14362,6 +14338,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="BATTERY" library="con-custom" deviceset="LED_THROUGHHOLE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14802,60 +14779,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <instances>
-<instance part="U$2" gate="G$1" x="60.96" y="60.96"/>
-<instance part="DCDCBOOST1" gate="G$1" x="60.96" y="33.02" rot="R270"/>
-<instance part="C6" gate="G$1" x="33.02" y="63.5"/>
-<instance part="C2" gate="G$1" x="99.06" y="60.96"/>
-<instance part="L1" gate="G$1" x="81.28" y="66.04" rot="R90"/>
+<instance part="3.3VREG" gate="G$1" x="60.96" y="60.96"/>
+<instance part="5VREG" gate="G$1" x="60.96" y="33.02" rot="R270"/>
+<instance part="CVREG4.7P" gate="G$1" x="33.02" y="63.5"/>
+<instance part="CVREG10U" gate="G$1" x="99.06" y="60.96"/>
+<instance part="LVREG2.2U" gate="G$1" x="81.28" y="66.04" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="33.02" y="55.88"/>
 <instance part="SUPPLY7" gate="GND" x="99.06" y="53.34"/>
 <instance part="SUPPLY8" gate="GND" x="40.64" y="22.86"/>
 <instance part="SUPPLY9" gate="GND" x="86.36" y="35.56"/>
-<instance part="BATT+" gate="G$1" x="-2.54" y="66.04"/>
-<instance part="BATT-" gate="G$1" x="-2.54" y="63.5"/>
 <instance part="SUPPLY12" gate="GND" x="5.08" y="48.26"/>
 <instance part="P+11" gate="VCC" x="99.06" y="71.12"/>
+<instance part="BATTERY" gate="G$1" x="-2.54" y="63.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="SW"/>
-<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="3.3VREG" gate="G$1" pin="SW"/>
+<pinref part="LVREG2.2U" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="CVREG4.7P" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="3.3VREG" gate="G$1" pin="GND"/>
 <wire x1="48.26" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="60.96" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 <junction x="33.02" y="58.42"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="CVREG10U" gate="G$1" pin="2"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DCDCBOOST1" gate="G$1" pin="NC"/>
+<pinref part="5VREG" gate="G$1" pin="NC"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="86.36" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BATT-" gate="G$1" pin="KL"/>
-<wire x1="2.54" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="63.5" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="53.34" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<pinref part="BATTERY" gate="G$1" pin="NEG"/>
+<wire x1="5.08" y1="53.34" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DCDCBOOST1" gate="G$1" pin="-VIN"/>
+<pinref part="5VREG" gate="G$1" pin="-VIN"/>
 <wire x1="45.72" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<pinref part="DCDCBOOST1" gate="G$1" pin="-VOUT"/>
+<pinref part="5VREG" gate="G$1" pin="-VOUT"/>
 <wire x1="40.64" y1="30.48" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 <junction x="40.64" y="30.48"/>
@@ -14863,12 +14839,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="BATT" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="3.3VREG" gate="G$1" pin="VIN"/>
+<pinref part="CVREG4.7P" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <junction x="33.02" y="66.04"/>
-<pinref part="U$2" gate="G$1" pin="EN"/>
+<pinref part="3.3VREG" gate="G$1" pin="EN"/>
 <wire x1="48.26" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
@@ -14876,27 +14852,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="20.32" y="66.04"/>
 <wire x1="20.32" y1="43.18" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
 <junction x="20.32" y="43.18"/>
-<pinref part="DCDCBOOST1" gate="G$1" pin="+VIN"/>
+<pinref part="5VREG" gate="G$1" pin="+VIN"/>
 <wire x1="20.32" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<label x="5.08" y="68.58" size="1.778" layer="95"/>
-<pinref part="BATT+" gate="G$1" pin="KL"/>
+<label x="12.7" y="71.12" size="1.778" layer="95"/>
+<pinref part="BATTERY" gate="G$1" pin="POS"/>
+<wire x1="-2.54" y1="73.66" x2="2.54" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="73.66" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5VRAIL" class="0">
 <segment>
-<pinref part="DCDCBOOST1" gate="G$1" pin="+VOUT"/>
+<pinref part="5VREG" gate="G$1" pin="+VOUT"/>
 <wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
 <label x="91.44" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="FB"/>
-<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="3.3VREG" gate="G$1" pin="FB"/>
+<pinref part="LVREG2.2U" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="55.88" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="CVREG10U" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <junction x="88.9" y="66.04"/>
