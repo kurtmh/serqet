@@ -14439,112 +14439,462 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 <sheet>
-<description>VGA</description>
+<description>DC Offset</description>
 <plain>
+<wire x1="111.76" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="97"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="60.96" y1="2.54" x2="111.76" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="111.76" y1="2.54" x2="111.76" y2="38.1" width="0.1524" layer="97"/>
+<wire x1="111.76" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="60.96" y1="50.8" x2="60.96" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="60.96" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="111.76" y1="86.36" x2="111.76" y2="50.8" width="0.1524" layer="97"/>
+<text x="63.5" y="81.28" size="1.778" layer="97">Voltage Summer</text>
+<text x="63.5" y="33.02" size="1.778" layer="97">Voltage Subtractor</text>
+<text x="20.32" y="76.2" size="1.778" layer="97">See coupling for bilateral switch</text>
 </plain>
 <instances>
-<instance part="VGA" gate="A" x="45.72" y="53.34"/>
-<instance part="P+5" gate="VCC" x="22.86" y="81.28"/>
-<instance part="SUPPLY11" gate="GND" x="22.86" y="10.16"/>
-<instance part="VGA_R_INLO" gate="G$1" x="-17.78" y="35.56"/>
-<instance part="R_ENBL_VGA" gate="G$1" x="12.7" y="60.96"/>
-<instance part="R_MODE_VGA" gate="G$1" x="2.54" y="48.26"/>
+<instance part="BILATERAL_DCOFF" gate="G$1" x="2.54" y="-7.62"/>
+<instance part="OP_AMP1_DCOFF" gate="G$1" x="106.68" y="68.58"/>
+<instance part="R4_DCOFF" gate="G$1" x="91.44" y="60.96"/>
+<instance part="R1_DCOFF" gate="G$1" x="68.58" y="71.12"/>
+<instance part="R2_DCOFF" gate="G$1" x="68.58" y="60.96"/>
+<instance part="R3_DCOFF" gate="G$1" x="91.44" y="81.28"/>
+<instance part="SUPPLY4" gate="GND" x="101.6" y="55.88"/>
+<instance part="P+1" gate="VCC" x="101.6" y="78.74"/>
+<instance part="OP_AMP2_DCOFF" gate="G$1" x="106.68" y="20.32"/>
+<instance part="R8_DCOFF" gate="G$1" x="91.44" y="12.7"/>
+<instance part="R5_DCOFF" gate="G$1" x="68.58" y="25.4"/>
+<instance part="R6_DCOFF" gate="G$1" x="68.58" y="15.24"/>
+<instance part="SUPPLY5" gate="GND" x="101.6" y="7.62"/>
+<instance part="P+2" gate="VCC" x="101.6" y="30.48"/>
+<instance part="R7_DCOFF" gate="G$1" x="91.44" y="33.02"/>
+<instance part="SUPPLY15" gate="GND" x="35.56" y="7.62"/>
+<instance part="P+3" gate="VCC" x="-12.7" y="15.24"/>
+<instance part="R_OFFSET_BYPASS" gate="G$1" x="-38.1" y="-2.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="LPF_OUT" class="0">
+<net name="N$13" class="0">
 <segment>
-<pinref part="VGA" gate="A" pin="INHI"/>
-<wire x1="27.94" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
-<label x="-5.08" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="VGA" gate="A" pin="VPSO"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="27.94" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="71.12" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="VGA" gate="A" pin="VPSI"/>
-<wire x1="27.94" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="68.58" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<junction x="22.86" y="71.12"/>
-<pinref part="VGA" gate="A" pin="VPOS"/>
-<wire x1="27.94" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="66.04" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<junction x="22.86" y="68.58"/>
-<wire x1="-17.78" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="39.37" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="VGA_R_INLO" gate="G$1" pin="CW"/>
-<pinref part="R_ENBL_VGA" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="60.96" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<junction x="7.62" y="71.12"/>
-<pinref part="R_MODE_VGA" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="48.26" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-5.08" y="71.12"/>
-</segment>
-</net>
-<net name="VGA_VDBS" class="0">
-<segment>
-<pinref part="VGA" gate="A" pin="VDBS"/>
-<wire x1="27.94" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
-<label x="-7.62" y="43.18" size="1.778" layer="95"/>
+<pinref part="R2_DCOFF" gate="G$1" pin="2"/>
+<pinref part="R1_DCOFF" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="V+"/>
+<wire x1="73.66" y1="66.04" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<junction x="73.66" y="66.04"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<pinref part="VGA" gate="A" pin="COMM"/>
-<wire x1="22.86" y1="30.48" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<junction x="22.86" y="30.48"/>
-<pinref part="VGA" gate="A" pin="CMOP"/>
-<wire x1="27.94" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="45.72" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="VGA" gate="A" pin="OFST"/>
-<wire x1="27.94" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="50.8" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<junction x="22.86" y="45.72"/>
-<pinref part="VGA" gate="A" pin="CMGN"/>
-<wire x1="27.94" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="58.42" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<junction x="22.86" y="50.8"/>
-<junction x="22.86" y="12.7"/>
-<wire x1="-17.78" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="12.7" x2="-17.78" y2="31.75" width="0.1524" layer="91"/>
-<pinref part="VGA_R_INLO" gate="G$1" pin="CCW"/>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<wire x1="101.6" y1="63.5" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R4_DCOFF" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="60.96" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<junction x="101.6" y="60.96"/>
+</segment>
+<segment>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R8_DCOFF" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<junction x="101.6" y="12.7"/>
+</segment>
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
+<wire x1="27.94" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VGA_OUT" class="0">
+<net name="N$12" class="0">
 <segment>
-<pinref part="VGA" gate="A" pin="OPHI"/>
-<wire x1="63.5" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<label x="78.74" y="68.58" size="1.778" layer="95"/>
+<pinref part="R4_DCOFF" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="V-"/>
+<wire x1="86.36" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R3_DCOFF" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="71.12" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<junction x="86.36" y="71.12"/>
 </segment>
 </net>
-<net name="VGA_MODE" class="0">
+<net name="N$14" class="0">
 <segment>
-<pinref part="VGA" gate="A" pin="MODE"/>
-<wire x1="27.94" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R_MODE_VGA" gate="G$1" pin="2"/>
+<pinref part="R3_DCOFF" gate="G$1" pin="2"/>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="OUT"/>
+<wire x1="96.52" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<junction x="109.22" y="68.58"/>
+<wire x1="119.38" y1="68.58" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_4"/>
+<wire x1="119.38" y1="-15.24" x2="27.94" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VCC" class="0">
 <segment>
-<pinref part="VGA" gate="A" pin="INLO"/>
-<pinref part="VGA_R_INLO" gate="G$1" pin="W"/>
-<wire x1="27.94" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="VCC"/>
+<wire x1="101.6" y1="76.2" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="VCC"/>
+<wire x1="101.6" y1="27.94" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="VCC"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="-2.54" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="N$15" class="0">
 <segment>
-<pinref part="VGA" gate="A" pin="ENBL"/>
-<pinref part="R_ENBL_VGA" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R8_DCOFF" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="12.7" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="V+"/>
+<wire x1="86.36" y1="15.24" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R6_DCOFF" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
+<junction x="86.36" y="15.24"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="V-"/>
+<pinref part="R7_DCOFF" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="22.86" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R5_DCOFF" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="25.4" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<junction x="86.36" y="25.4"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R7_DCOFF" gate="G$1" pin="2"/>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="OUT"/>
+<wire x1="96.52" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="33.02" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="20.32" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
+<junction x="109.22" y="20.32"/>
+<wire x1="116.84" y1="20.32" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_3"/>
+<wire x1="116.84" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADJ_DC_OFFSET" class="0">
+<segment>
+<pinref part="R5_DCOFF" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="25.4" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
+<label x="-55.88" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R6_DCOFF" gate="G$1" pin="1"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_1"/>
+<wire x1="-2.54" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="22.86" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="POS_OFFSET" class="0">
+<segment>
+<pinref part="R1_DCOFF" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ATTEN_OUT" class="0">
+<segment>
+<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-55.88" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DC_OFFSET_OUT" class="0">
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_3"/>
+<wire x1="27.94" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
+<label x="139.7" y="-5.08" size="1.778" layer="95"/>
+<wire x1="35.56" y1="-5.08" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="35.56" y="-5.08"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_4"/>
+<wire x1="35.56" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-5.08" x2="139.7" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NEG_OFFSET_EN" class="0">
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_1"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="15.24" x2="30.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="15.24" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_3"/>
+<wire x1="30.48" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="ENABLE"/>
+<wire x1="106.68" y1="15.24" x2="106.68" y2="0" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
+<junction x="30.48" y="2.54"/>
+<wire x1="-5.08" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-5.08" y="2.54"/>
+<label x="-55.88" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_2"/>
+<wire x1="-2.54" y1="-17.78" x2="-30.48" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-17.78" x2="-30.48" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R2_DCOFF" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="POS_OFFSET_EN" class="0">
+<segment>
+<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="ENABLE"/>
+<wire x1="106.68" y1="63.5" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="48.26" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_4"/>
+<wire x1="45.72" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-10.16" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="30.48" y="-10.16"/>
+<wire x1="30.48" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-22.86" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_2"/>
+<wire x1="-7.62" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-10.16"/>
+<label x="-55.88" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NET_IO_1" class="0">
+<segment>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_1"/>
+<wire x1="-2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_2"/>
+<wire x1="-12.7" y1="-15.24" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-2.54" x2="-33.02" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-2.54"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>Coupling</description>
+<plain>
+<text x="-30.48" y="-15.24" size="1.778" layer="97">bilateral switch used in DC Offset</text>
+</plain>
+<instances>
+<instance part="OP_AMP_COUPLING" gate="G$1" x="30.48" y="60.96"/>
+<instance part="SUPPLY14" gate="GND" x="-15.24" y="15.24"/>
+<instance part="R4_COUPLING" gate="G$1" x="15.24" y="50.8"/>
+<instance part="R2_COUPLING" gate="G$1" x="-2.54" y="68.58"/>
+<instance part="R3_COUPLING" gate="G$1" x="-2.54" y="58.42"/>
+<instance part="R5_COUPLING" gate="G$1" x="15.24" y="43.18"/>
+<instance part="POT_COUPLING" gate="G$1" x="-22.86" y="58.42"/>
+<instance part="R1_COUPLING" gate="G$1" x="-40.64" y="60.96" rot="R270"/>
+<instance part="C1_COUPLING" gate="G$1" x="-35.56" y="68.58" rot="R90"/>
+<instance part="BILATERAL_COUPLING" gate="G$1" x="-43.18" y="0"/>
+<instance part="SUPPLY16" gate="GND" x="-40.64" y="50.8"/>
+<instance part="SUPPLY17" gate="GND" x="25.4" y="48.26"/>
+<instance part="SUPPLY18" gate="GND" x="-22.86" y="50.8"/>
+<instance part="P+6" gate="VCC" x="25.4" y="71.12"/>
+<instance part="P+7" gate="VCC" x="-22.86" y="66.04"/>
+<instance part="P+8" gate="VCC" x="-48.26" y="22.86"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="N$7" class="0">
+<segment>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V+"/>
+<wire x1="17.78" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="58.42" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R2_COUPLING" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<junction x="5.08" y="58.42"/>
+<pinref part="R3_COUPLING" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V-"/>
+<wire x1="17.78" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="63.5" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R4_COUPLING" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="50.8" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+<junction x="7.62" y="50.8"/>
+<pinref part="R5_COUPLING" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SUPPLY14" gate="GND" pin="GND"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="GND"/>
+<wire x1="-17.78" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R1_COUPLING" gate="G$1" pin="2"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
+<wire x1="-40.64" y1="55.88" x2="-40.64" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4_COUPLING" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="GND"/>
+<wire x1="25.4" y1="55.88" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<junction x="25.4" y="50.8"/>
+</segment>
+<segment>
+<pinref part="POT_COUPLING" gate="G$1" pin="CCW"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+<wire x1="-22.86" y1="54.61" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OFST" class="0">
+<segment>
+<pinref part="R3_COUPLING" gate="G$1" pin="1"/>
+<label x="-16.256" y="55.626" size="1.778" layer="95"/>
+<pinref part="POT_COUPLING" gate="G$1" pin="W"/>
+<wire x1="-20.32" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AC_COUPLING_IN" class="0">
+<segment>
+<pinref part="C1_COUPLING" gate="G$1" pin="1"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_1"/>
+<wire x1="-48.26" y1="2.54" x2="-53.34" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="2.54" x2="-53.34" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R1_COUPLING" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="68.58" x2="-38.1" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="66.04" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-40.64" y="68.58"/>
+</segment>
+</net>
+<net name="COUPLING_OPAMP_OUT" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_3"/>
+<wire x1="-17.78" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="OUT"/>
+<wire x1="33.02" y1="43.18" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R5_COUPLING" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="43.18" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
+<junction x="33.02" y="43.18"/>
+</segment>
+</net>
+<net name="AC_EN" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_1"/>
+<wire x1="-48.26" y1="10.16" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
+<label x="-68.58" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_3"/>
+<label x="10.16" y="10.16" size="1.778" layer="95"/>
+<wire x1="-17.78" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="10.16" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="ENABLE"/>
+</segment>
+</net>
+<net name="DC_EN" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_2"/>
+<wire x1="-48.26" y1="-2.54" x2="-68.58" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-68.58" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POS_OFFSET_EN" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_4"/>
+<wire x1="-17.78" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-5.08" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="COUPLING_OUT" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_2"/>
+<wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-17.78" x2="53.34" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-17.78" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_3"/>
+<wire x1="-17.78" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
+<junction x="53.34" y="2.54"/>
+<label x="66.04" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DC_OFFSET_OUT" class="0">
+<segment>
+<wire x1="-83.82" y1="5.08" x2="-58.42" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_1"/>
+<wire x1="-58.42" y1="5.08" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
+<label x="-83.82" y="5.08" size="1.778" layer="95"/>
+<wire x1="-58.42" y1="5.08" x2="-58.42" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-58.42" y="5.08"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_2"/>
+<wire x1="-58.42" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADJ_DC_OFFSET" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_4"/>
+<wire x1="-17.78" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-5.08" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POS_OFFSET" class="0">
+<segment>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_4"/>
+<wire x1="-17.78" y1="-10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-5.08" y="-12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="OP_AMP_COUPLING" gate="G$1" pin="VCC"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="25.4" y1="66.04" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<pinref part="POT_COUPLING" gate="G$1" pin="CW"/>
+<wire x1="-22.86" y1="63.5" x2="-22.86" y2="62.23" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<pinref part="BILATERAL_COUPLING" gate="G$1" pin="VCC"/>
+<wire x1="-48.26" y1="20.32" x2="-48.26" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C1_COUPLING" gate="G$1" pin="2"/>
+<pinref part="R2_COUPLING" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="68.58" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14656,6 +15006,303 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R_EN_LPF" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>VGA</description>
+<plain>
+</plain>
+<instances>
+<instance part="VGA" gate="A" x="45.72" y="53.34"/>
+<instance part="P+5" gate="VCC" x="22.86" y="81.28"/>
+<instance part="SUPPLY11" gate="GND" x="22.86" y="10.16"/>
+<instance part="VGA_R_INLO" gate="G$1" x="-17.78" y="35.56"/>
+<instance part="R_ENBL_VGA" gate="G$1" x="12.7" y="60.96"/>
+<instance part="R_MODE_VGA" gate="G$1" x="2.54" y="48.26"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="LPF_OUT" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="INHI"/>
+<wire x1="27.94" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+<label x="-5.08" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="VPSO"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="27.94" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="71.12" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="VGA" gate="A" pin="VPSI"/>
+<wire x1="27.94" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="68.58" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<junction x="22.86" y="71.12"/>
+<pinref part="VGA" gate="A" pin="VPOS"/>
+<wire x1="27.94" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="66.04" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<junction x="22.86" y="68.58"/>
+<wire x1="-17.78" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="39.37" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="CW"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="60.96" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<junction x="7.62" y="71.12"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="48.26" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-5.08" y="71.12"/>
+</segment>
+</net>
+<net name="VGA_VDBS" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="VDBS"/>
+<wire x1="27.94" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+<label x="-7.62" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<pinref part="VGA" gate="A" pin="COMM"/>
+<wire x1="22.86" y1="30.48" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<junction x="22.86" y="30.48"/>
+<pinref part="VGA" gate="A" pin="CMOP"/>
+<wire x1="27.94" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="45.72" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="VGA" gate="A" pin="OFST"/>
+<wire x1="27.94" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="50.8" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<junction x="22.86" y="45.72"/>
+<pinref part="VGA" gate="A" pin="CMGN"/>
+<wire x1="27.94" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<junction x="22.86" y="50.8"/>
+<junction x="22.86" y="12.7"/>
+<wire x1="-17.78" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="CCW"/>
+</segment>
+</net>
+<net name="VGA_OUT" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="OPHI"/>
+<wire x1="63.5" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<label x="78.74" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VGA_MODE" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="MODE"/>
+<wire x1="27.94" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R_MODE_VGA" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="INLO"/>
+<pinref part="VGA_R_INLO" gate="G$1" pin="W"/>
+<wire x1="27.94" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="VGA" gate="A" pin="ENBL"/>
+<pinref part="R_ENBL_VGA" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>ADC</description>
+<plain>
+</plain>
+<instances>
+<instance part="ADC" gate="U" x="58.42" y="53.34"/>
+<instance part="C1_ADC" gate="G$1" x="35.56" y="60.96" rot="R270"/>
+<instance part="D1_ADC" gate="1" x="-2.54" y="48.26" rot="R270"/>
+<instance part="D2_ADC" gate="1" x="5.08" y="48.26" rot="R90"/>
+<instance part="POT_ADC" gate="G$1" x="20.32" y="30.48" rot="R180"/>
+<instance part="SUPPLY13" gate="GND" x="30.48" y="48.26"/>
+<instance part="P+9" gate="VCC" x="20.32" y="38.1"/>
+<instance part="P+10" gate="VCC" x="68.58" y="78.74"/>
+<instance part="SUPPLY19" gate="GND" x="20.32" y="22.86"/>
+<instance part="BYPASS_ATTEN_TO_ADC" gate="G$1" x="-10.16" y="48.26" rot="R90"/>
+<instance part="VGA_TO_ADC" gate="G$1" x="-20.32" y="48.26" rot="R90"/>
+</instances>
+<busses>
+<bus name="ADC_OUT_[0..7]">
+<segment>
+<wire x1="81.28" y1="48.26" x2="81.28" y2="68.58" width="0.762" layer="92"/>
+<wire x1="81.28" y1="68.58" x2="91.44" y2="68.58" width="0.762" layer="92"/>
+<label x="81.28" y="71.12" size="1.778" layer="95"/>
+</segment>
+</bus>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="GND"/>
+<wire x1="45.72" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
+<pinref part="ADC" gate="U" pin="PWRDWN"/>
+<wire x1="45.72" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C1_ADC" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="66.04" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="60.96" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<junction x="30.48" y="60.96"/>
+<junction x="30.48" y="50.8"/>
+</segment>
+<segment>
+<pinref part="POT_ADC" gate="G$1" pin="CW"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="VREFOUT"/>
+<pinref part="C1_ADC" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_ENCODE" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="ENCODE"/>
+<wire x1="45.72" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="33.02" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="D2_ADC" gate="1" pin="A"/>
+<wire x1="5.08" y1="40.64" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="D1_ADC" gate="1" pin="C"/>
+<wire x1="-2.54" y1="45.72" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="40.64" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<junction x="5.08" y="40.64"/>
+<pinref part="POT_ADC" gate="G$1" pin="W"/>
+<wire x1="10.16" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="ADC" gate="U" pin="!AIN"/>
+<wire x1="45.72" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<junction x="10.16" y="40.64"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="POT_ADC" gate="G$1" pin="CCW"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="20.32" y1="35.56" x2="20.32" y2="34.29" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="U" pin="VD"/>
+<wire x1="45.72" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="53.34" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="73.66" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="ADC" gate="U" pin="VDD"/>
+<wire x1="73.66" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="76.2" size="1.778" layer="95"/>
+<pinref part="P+10" gate="VCC" pin="VCC"/>
+<wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<junction x="68.58" y="73.66"/>
+</segment>
+</net>
+<net name="ADC_OUT_0" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D0"/>
+<wire x1="81.28" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_1" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D1"/>
+<wire x1="81.28" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_2" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D2"/>
+<wire x1="81.28" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_3" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D3"/>
+<wire x1="81.28" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_4" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D4"/>
+<wire x1="81.28" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_5" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D5"/>
+<wire x1="81.28" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_6" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D6"/>
+<wire x1="81.28" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_OUT_7" class="0">
+<segment>
+<pinref part="ADC" gate="U" pin="D7"/>
+<wire x1="81.28" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_IN" class="0">
+<segment>
+<pinref part="D1_ADC" gate="1" pin="A"/>
+<wire x1="-2.54" y1="50.8" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="D2_ADC" gate="1" pin="C"/>
+<wire x1="5.08" y1="55.88" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-2.54" y="55.88"/>
+<wire x1="5.08" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="5.08" y="55.88"/>
+<pinref part="ADC" gate="U" pin="AIN"/>
+<wire x1="12.7" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
+<label x="-10.16" y="58.42" size="1.778" layer="95"/>
+<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="55.88" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-10.16" y="55.88"/>
+<pinref part="VGA_TO_ADC" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ATTEN_OUT" class="0">
+<segment>
+<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="43.18" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
+<label x="-10.16" y="40.64" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="VGA_OUT" class="0">
+<segment>
+<pinref part="VGA_TO_ADC" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="43.18" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="-20.32" y="40.64" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
@@ -14912,394 +15559,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 <sheet>
-<description>ADC</description>
-<plain>
-</plain>
-<instances>
-<instance part="ADC" gate="U" x="58.42" y="53.34"/>
-<instance part="C1_ADC" gate="G$1" x="35.56" y="60.96" rot="R270"/>
-<instance part="D1_ADC" gate="1" x="-2.54" y="48.26" rot="R270"/>
-<instance part="D2_ADC" gate="1" x="5.08" y="48.26" rot="R90"/>
-<instance part="POT_ADC" gate="G$1" x="20.32" y="30.48" rot="R180"/>
-<instance part="SUPPLY13" gate="GND" x="30.48" y="48.26"/>
-<instance part="P+9" gate="VCC" x="20.32" y="38.1"/>
-<instance part="P+10" gate="VCC" x="68.58" y="78.74"/>
-<instance part="SUPPLY19" gate="GND" x="20.32" y="22.86"/>
-<instance part="BYPASS_ATTEN_TO_ADC" gate="G$1" x="-10.16" y="48.26" rot="R90"/>
-<instance part="VGA_TO_ADC" gate="G$1" x="-20.32" y="48.26" rot="R90"/>
-</instances>
-<busses>
-<bus name="ADC_OUT_[0..7]">
-<segment>
-<wire x1="81.28" y1="48.26" x2="81.28" y2="68.58" width="0.762" layer="92"/>
-<wire x1="81.28" y1="68.58" x2="91.44" y2="68.58" width="0.762" layer="92"/>
-<label x="81.28" y="71.12" size="1.778" layer="95"/>
-</segment>
-</bus>
-</busses>
-<nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="GND"/>
-<wire x1="45.72" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<pinref part="ADC" gate="U" pin="PWRDWN"/>
-<wire x1="45.72" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C1_ADC" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="66.04" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="60.96" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
-<junction x="30.48" y="60.96"/>
-<junction x="30.48" y="50.8"/>
-</segment>
-<segment>
-<pinref part="POT_ADC" gate="G$1" pin="CW"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="VREFOUT"/>
-<pinref part="C1_ADC" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_ENCODE" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="ENCODE"/>
-<wire x1="45.72" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<label x="33.02" y="35.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="D2_ADC" gate="1" pin="A"/>
-<wire x1="5.08" y1="40.64" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="D1_ADC" gate="1" pin="C"/>
-<wire x1="-2.54" y1="45.72" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="40.64" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
-<junction x="5.08" y="40.64"/>
-<pinref part="POT_ADC" gate="G$1" pin="W"/>
-<wire x1="10.16" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="ADC" gate="U" pin="!AIN"/>
-<wire x1="45.72" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="45.72" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<junction x="10.16" y="40.64"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="POT_ADC" gate="G$1" pin="CCW"/>
-<pinref part="P+9" gate="VCC" pin="VCC"/>
-<wire x1="20.32" y1="35.56" x2="20.32" y2="34.29" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ADC" gate="U" pin="VD"/>
-<wire x1="45.72" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="53.34" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="73.66" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="ADC" gate="U" pin="VDD"/>
-<wire x1="73.66" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
-<label x="45.72" y="76.2" size="1.778" layer="95"/>
-<pinref part="P+10" gate="VCC" pin="VCC"/>
-<wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<junction x="68.58" y="73.66"/>
-</segment>
-</net>
-<net name="ADC_OUT_0" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D0"/>
-<wire x1="81.28" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_1" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D1"/>
-<wire x1="81.28" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_2" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D2"/>
-<wire x1="81.28" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_3" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D3"/>
-<wire x1="81.28" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_4" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D4"/>
-<wire x1="81.28" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_5" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D5"/>
-<wire x1="81.28" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_6" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D6"/>
-<wire x1="81.28" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_OUT_7" class="0">
-<segment>
-<pinref part="ADC" gate="U" pin="D7"/>
-<wire x1="81.28" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_IN" class="0">
-<segment>
-<pinref part="D1_ADC" gate="1" pin="A"/>
-<wire x1="-2.54" y1="50.8" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="D2_ADC" gate="1" pin="C"/>
-<wire x1="5.08" y1="55.88" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-2.54" y="55.88"/>
-<wire x1="5.08" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="55.88" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="5.08" y="55.88"/>
-<pinref part="ADC" gate="U" pin="AIN"/>
-<wire x1="12.7" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
-<label x="-10.16" y="58.42" size="1.778" layer="95"/>
-<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="55.88" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-10.16" y="55.88"/>
-<pinref part="VGA_TO_ADC" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ATTEN_OUT" class="0">
-<segment>
-<pinref part="BYPASS_ATTEN_TO_ADC" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="43.18" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
-<label x="-10.16" y="40.64" size="1.778" layer="95" rot="R270"/>
-</segment>
-</net>
-<net name="VGA_OUT" class="0">
-<segment>
-<pinref part="VGA_TO_ADC" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="43.18" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<label x="-20.32" y="40.64" size="1.778" layer="95" rot="R270"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
-<description>Coupling</description>
-<plain>
-<text x="-30.48" y="-15.24" size="1.778" layer="97">bilateral switch used in DC Offset</text>
-</plain>
-<instances>
-<instance part="OP_AMP_COUPLING" gate="G$1" x="30.48" y="60.96"/>
-<instance part="SUPPLY14" gate="GND" x="-15.24" y="15.24"/>
-<instance part="R4_COUPLING" gate="G$1" x="15.24" y="50.8"/>
-<instance part="R2_COUPLING" gate="G$1" x="-2.54" y="68.58"/>
-<instance part="R3_COUPLING" gate="G$1" x="-2.54" y="58.42"/>
-<instance part="R5_COUPLING" gate="G$1" x="15.24" y="43.18"/>
-<instance part="POT_COUPLING" gate="G$1" x="-22.86" y="58.42"/>
-<instance part="R1_COUPLING" gate="G$1" x="-40.64" y="60.96" rot="R270"/>
-<instance part="C1_COUPLING" gate="G$1" x="-35.56" y="68.58" rot="R90"/>
-<instance part="BILATERAL_COUPLING" gate="G$1" x="-43.18" y="0"/>
-<instance part="SUPPLY16" gate="GND" x="-40.64" y="50.8"/>
-<instance part="SUPPLY17" gate="GND" x="25.4" y="48.26"/>
-<instance part="SUPPLY18" gate="GND" x="-22.86" y="50.8"/>
-<instance part="P+6" gate="VCC" x="25.4" y="71.12"/>
-<instance part="P+7" gate="VCC" x="-22.86" y="66.04"/>
-<instance part="P+8" gate="VCC" x="-48.26" y="22.86"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="N$7" class="0">
-<segment>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V+"/>
-<wire x1="17.78" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="58.42" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R2_COUPLING" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
-<junction x="5.08" y="58.42"/>
-<pinref part="R3_COUPLING" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="V-"/>
-<wire x1="17.78" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="63.5" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R4_COUPLING" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="50.8" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
-<junction x="7.62" y="50.8"/>
-<pinref part="R5_COUPLING" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="GND"/>
-<wire x1="-17.78" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R1_COUPLING" gate="G$1" pin="2"/>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<wire x1="-40.64" y1="55.88" x2="-40.64" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R4_COUPLING" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="55.88" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<junction x="25.4" y="50.8"/>
-</segment>
-<segment>
-<pinref part="POT_COUPLING" gate="G$1" pin="CCW"/>
-<pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="-22.86" y1="54.61" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="OFST" class="0">
-<segment>
-<pinref part="R3_COUPLING" gate="G$1" pin="1"/>
-<label x="-16.256" y="55.626" size="1.778" layer="95"/>
-<pinref part="POT_COUPLING" gate="G$1" pin="W"/>
-<wire x1="-20.32" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AC_COUPLING_IN" class="0">
-<segment>
-<pinref part="C1_COUPLING" gate="G$1" pin="1"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_1"/>
-<wire x1="-48.26" y1="2.54" x2="-53.34" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="2.54" x2="-53.34" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1_COUPLING" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="68.58" x2="-38.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="66.04" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-40.64" y="68.58"/>
-</segment>
-</net>
-<net name="COUPLING_OPAMP_OUT" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_3"/>
-<wire x1="-17.78" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="43.18" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R5_COUPLING" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="43.18" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<junction x="33.02" y="43.18"/>
-</segment>
-</net>
-<net name="AC_EN" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_1"/>
-<wire x1="-48.26" y1="10.16" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
-<label x="-68.58" y="10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_3"/>
-<label x="10.16" y="10.16" size="1.778" layer="95"/>
-<wire x1="-17.78" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="10.16" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="ENABLE"/>
-</segment>
-</net>
-<net name="DC_EN" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_2"/>
-<wire x1="-48.26" y1="-2.54" x2="-68.58" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-68.58" y="-2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="POS_OFFSET_EN" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="C_4"/>
-<wire x1="-17.78" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-5.08" y="-2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="COUPLING_OUT" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_2"/>
-<wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-17.78" x2="53.34" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-17.78" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_3"/>
-<wire x1="-17.78" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
-<junction x="53.34" y="2.54"/>
-<label x="66.04" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DC_OFFSET_OUT" class="0">
-<segment>
-<wire x1="-83.82" y1="5.08" x2="-58.42" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_1"/>
-<wire x1="-58.42" y1="5.08" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
-<label x="-83.82" y="5.08" size="1.778" layer="95"/>
-<wire x1="-58.42" y1="5.08" x2="-58.42" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-58.42" y="5.08"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_2"/>
-<wire x1="-58.42" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADJ_DC_OFFSET" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="I/O_4"/>
-<wire x1="-17.78" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-5.08" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="POS_OFFSET" class="0">
-<segment>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="O/I_4"/>
-<wire x1="-17.78" y1="-10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-5.08" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="OP_AMP_COUPLING" gate="G$1" pin="VCC"/>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-<pinref part="POT_COUPLING" gate="G$1" pin="CW"/>
-<wire x1="-22.86" y1="63.5" x2="-22.86" y2="62.23" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+8" gate="VCC" pin="VCC"/>
-<pinref part="BILATERAL_COUPLING" gate="G$1" pin="VCC"/>
-<wire x1="-48.26" y1="20.32" x2="-48.26" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="C1_COUPLING" gate="G$1" pin="2"/>
-<pinref part="R2_COUPLING" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="68.58" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
 <description>Micro/Bluetooth</description>
 <plain>
 </plain>
@@ -15486,265 +15745,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="BYPASS_ATTEN_MICRO" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
 <label x="10.16" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
-<description>DC Offset</description>
-<plain>
-<wire x1="111.76" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="97"/>
-<wire x1="60.96" y1="38.1" x2="60.96" y2="2.54" width="0.1524" layer="97"/>
-<wire x1="60.96" y1="2.54" x2="111.76" y2="2.54" width="0.1524" layer="97"/>
-<wire x1="111.76" y1="2.54" x2="111.76" y2="38.1" width="0.1524" layer="97"/>
-<wire x1="111.76" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="97"/>
-<wire x1="60.96" y1="50.8" x2="60.96" y2="86.36" width="0.1524" layer="97"/>
-<wire x1="60.96" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="97"/>
-<wire x1="111.76" y1="86.36" x2="111.76" y2="50.8" width="0.1524" layer="97"/>
-<text x="63.5" y="81.28" size="1.778" layer="97">Voltage Summer</text>
-<text x="63.5" y="33.02" size="1.778" layer="97">Voltage Subtractor</text>
-<text x="20.32" y="76.2" size="1.778" layer="97">See coupling for bilateral switch</text>
-</plain>
-<instances>
-<instance part="BILATERAL_DCOFF" gate="G$1" x="2.54" y="-7.62"/>
-<instance part="OP_AMP1_DCOFF" gate="G$1" x="106.68" y="68.58"/>
-<instance part="R4_DCOFF" gate="G$1" x="91.44" y="60.96"/>
-<instance part="R1_DCOFF" gate="G$1" x="68.58" y="71.12"/>
-<instance part="R2_DCOFF" gate="G$1" x="68.58" y="60.96"/>
-<instance part="R3_DCOFF" gate="G$1" x="91.44" y="81.28"/>
-<instance part="SUPPLY4" gate="GND" x="101.6" y="55.88"/>
-<instance part="P+1" gate="VCC" x="101.6" y="78.74"/>
-<instance part="OP_AMP2_DCOFF" gate="G$1" x="106.68" y="20.32"/>
-<instance part="R8_DCOFF" gate="G$1" x="91.44" y="12.7"/>
-<instance part="R5_DCOFF" gate="G$1" x="68.58" y="25.4"/>
-<instance part="R6_DCOFF" gate="G$1" x="68.58" y="15.24"/>
-<instance part="SUPPLY5" gate="GND" x="101.6" y="7.62"/>
-<instance part="P+2" gate="VCC" x="101.6" y="30.48"/>
-<instance part="R7_DCOFF" gate="G$1" x="91.44" y="33.02"/>
-<instance part="SUPPLY15" gate="GND" x="35.56" y="7.62"/>
-<instance part="P+3" gate="VCC" x="-12.7" y="15.24"/>
-<instance part="R_OFFSET_BYPASS" gate="G$1" x="-38.1" y="-2.54"/>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R2_DCOFF" gate="G$1" pin="2"/>
-<pinref part="R1_DCOFF" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="71.12" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="V+"/>
-<wire x1="73.66" y1="66.04" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
-<junction x="73.66" y="66.04"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="101.6" y1="63.5" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R4_DCOFF" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="60.96" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<junction x="101.6" y="60.96"/>
-</segment>
-<segment>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R8_DCOFF" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<junction x="101.6" y="12.7"/>
-</segment>
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="27.94" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R4_DCOFF" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="60.96" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="V-"/>
-<wire x1="86.36" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R3_DCOFF" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="71.12" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<junction x="86.36" y="71.12"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R3_DCOFF" gate="G$1" pin="2"/>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="OUT"/>
-<wire x1="96.52" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="81.28" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<junction x="109.22" y="68.58"/>
-<wire x1="119.38" y1="68.58" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_4"/>
-<wire x1="119.38" y1="-15.24" x2="27.94" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="VCC"/>
-<wire x1="101.6" y1="76.2" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="VCC"/>
-<wire x1="101.6" y1="27.94" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="VCC"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="-2.54" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R8_DCOFF" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="12.7" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="V+"/>
-<wire x1="86.36" y1="15.24" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="R6_DCOFF" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
-<junction x="86.36" y="15.24"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="V-"/>
-<pinref part="R7_DCOFF" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="22.86" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R5_DCOFF" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="25.4" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<junction x="86.36" y="25.4"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R7_DCOFF" gate="G$1" pin="2"/>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="OUT"/>
-<wire x1="96.52" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="33.02" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="20.32" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
-<junction x="109.22" y="20.32"/>
-<wire x1="116.84" y1="20.32" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_3"/>
-<wire x1="116.84" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADJ_DC_OFFSET" class="0">
-<segment>
-<pinref part="R5_DCOFF" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="25.4" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
-<label x="-55.88" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R6_DCOFF" gate="G$1" pin="1"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_1"/>
-<wire x1="-2.54" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="22.86" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="POS_OFFSET" class="0">
-<segment>
-<pinref part="R1_DCOFF" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
-<label x="40.64" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ATTEN_OUT" class="0">
-<segment>
-<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-55.88" y="-2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DC_OFFSET_OUT" class="0">
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_3"/>
-<wire x1="27.94" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
-<label x="139.7" y="-5.08" size="1.778" layer="95"/>
-<wire x1="35.56" y1="-5.08" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="35.56" y="-5.08"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_4"/>
-<wire x1="35.56" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-5.08" x2="139.7" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="NEG_OFFSET_EN" class="0">
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_1"/>
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="15.24" x2="30.48" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="15.24" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_3"/>
-<wire x1="30.48" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="OP_AMP2_DCOFF" gate="G$1" pin="ENABLE"/>
-<wire x1="106.68" y1="15.24" x2="106.68" y2="0" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<junction x="30.48" y="2.54"/>
-<wire x1="-5.08" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
-<junction x="-5.08" y="2.54"/>
-<label x="-55.88" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="O/I_2"/>
-<wire x1="-2.54" y1="-17.78" x2="-30.48" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="-17.78" x2="-30.48" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R2_DCOFF" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="POS_OFFSET_EN" class="0">
-<segment>
-<pinref part="OP_AMP1_DCOFF" gate="G$1" pin="ENABLE"/>
-<wire x1="106.68" y1="63.5" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="48.26" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_4"/>
-<wire x1="45.72" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-10.16" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="30.48" y="-10.16"/>
-<wire x1="30.48" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-22.86" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="C_2"/>
-<wire x1="-7.62" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="-7.62" y="-10.16"/>
-<label x="-55.88" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="NET_IO_1" class="0">
-<segment>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_1"/>
-<wire x1="-2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="BILATERAL_DCOFF" gate="G$1" pin="I/O_2"/>
-<wire x1="-12.7" y1="-15.24" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R_OFFSET_BYPASS" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-2.54" x2="-33.02" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-2.54"/>
 </segment>
 </net>
 </nets>
